@@ -1,0 +1,25 @@
+.date-range {
+  font-size: 60px;
+}
+
+.intro-header {
+  padding: 10px;
+  text-align: center;
+
+}
+
+.tree-img {
+ position: relative;
+ width: 98%;
+ height: 98%;
+ overflow: hidden;
+}
+
+   @media screen and (max-width: 620px) {
+        .intro-header {
+       padding: 20px;
+       font-size: 20px;
+     }
+
+     
+   }

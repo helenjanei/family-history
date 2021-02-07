@@ -11,6 +11,8 @@ import LifeSummarySection from './LifeSummarySection'
 function PersonMaster() {
   return (
     <div className="person-master">
+      <div className="row">
+        <div className="person-card">
       <IntroSection />
     <BirthSection/>
     <CensusSection />
@@ -18,7 +20,8 @@ function PersonMaster() {
     <WorkSection />
     <DeathSection />
     <LifeSummarySection />
-
+</div>
+</div>
     </div>
   );
 }
