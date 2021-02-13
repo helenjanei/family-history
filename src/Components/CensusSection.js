@@ -2,33 +2,51 @@
 import '../App.css';
 
 
-function CensusSection() {
-  return (
-    <div className="census-section">
-      
-     <div className="year card">
-Census for XXXYear
-            </div>
-  
-            <div className="census-summary-text card">
-<p> In XXXyear I lived with the following people:
-  
-    <ul>
-      <li>MAP THROUGH</li>
-      <li>TO CREATE LIST</li>
-       </ul>
-</p>
-            </div>
-            
-  
-            <div className="census-house-pic card">
-              census house pic
-            </div>
-            <div className="census-change card">
-             Since last time XXXCENSUS SUMMARY
+function CensusSection(props) {
+  const relatives = props.relatives
+  const listRelatives = relatives.map((relative, i) => 
+  <li key={i} >{relative}</li>)
 
-            </div>
-    </div>
+  return (
+
+ <>
+       <li className='cards__item'>
+        <a className='cards__item__link' target='_blank' href={props.url}>
+          <figure className='cards__item__pic-wrap' data-category={props.label}>
+            <img
+              className='cards__item__img'
+              
+              src={props.src}
+              />
+          </figure>
+          <div className='cards__item__info'>
+            <h5 className='cards__item__text'> {props.text}</h5>
+          </div>
+        </a>
+      
+        <a className='cards__item__link' href={props.url2} target='_blank'>
+          <figure className='cards__item__pic-wrap' data-category={props.label2}>
+            <img
+              className='cards__item__img'
+              
+              src={props.src2}
+              />
+          </figure>
+          <div className='cards__item__info'>
+            <div className='cards__item__text'>
+              <h5>
+              {props.text2}
+              </h5>
+                <ul>{listRelatives}
+                </ul>              
+              </div>
+              
+          </div>
+        </a>
+      </li>
+              
+     </>
+
   );
 }
 

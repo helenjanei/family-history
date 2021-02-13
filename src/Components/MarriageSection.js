@@ -1,20 +1,25 @@
 
 import '../App.css';
 
-function MarriageSection() {
-  return (
-    <div className="marriage-section">
-      
-  <div className="marriage-pic card">
-Marriage pic
-  </div>
-  <div className="wedding-section card">
-wedding section
-  </div>
-  <div className="marriage-summary card">
-marriage summary
-  </div>
-    </div>
+function MarriageSection(props) {
+  return ( 
+  <>
+      <li className='cards__item'>
+        <a className='cards__item__link' href={props.url}>
+          <figure className='cards__item__pic-wrap' data-category={props.label}>
+            <img
+              className='cards__item__img'
+             
+              src={props.src}
+            />
+          </figure>
+          <div className='cards__item__info'>
+            <h5 className='cards__item__text'>{props.text}</h5>
+          </div>
+        </a>
+      </li>
+
+     </>
   );
 }
 

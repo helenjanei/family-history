@@ -1,27 +1,31 @@
 
+import React from 'react'
 import '../App.css';
 import './introSection.css'
-import FamilyTree from '../Images/BAM-family-tree.jpg'
 
 
-function IntroSection() {
+
+function IntroSection(props) {
   return (
-      <div className="intro-wrapper">
-        <div className="intro-header">
-          <h4>Beatrice Annie Wilkinson (nee Marten) </h4>
-          <p className="date-range">1882-1938</p>
-       </div>
-      
-       <div className="intro-section">
-          <div className="intro-text card">
-              <p>  My name is XXXname and I am your XXXrelation. </p>
+      <>
+      <li className='cards__item'>
+        <a className='cards__item__link' href={props.url}>
+          <figure className='cards__item__pic-wrap' data-category={props.label}>
+            <img
+              className='cards__item__img'
+              src={props.src}
+            />
+          </figure>
+          <div className='cards__item__info'>
+            <h5 className='cards__item__text'>{props.text}</h5>
           </div>
-          <div className="intro-family-tree card">
-            <img className="tree-img" src={FamilyTree} />
-          </div>
+        </a>
+      </li>
+
+     </>
+     
+     
     
-      </div>
-    </div>
   );
 }
 

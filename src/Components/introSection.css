@@ -8,12 +8,7 @@
 
 }
 
-.tree-img {
- position: relative;
- width: 98%;
- height: 98%;
- overflow: hidden;
-}
+
 
    @media screen and (max-width: 620px) {
         .intro-header {
