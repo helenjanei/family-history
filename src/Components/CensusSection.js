@@ -10,7 +10,7 @@ function CensusSection(props) {
   return (
 
  <>
-       <li className='cards__item'>
+     
         <a className='cards__item__link' target='_blank' href={props.url}>
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img
@@ -43,7 +43,7 @@ function CensusSection(props) {
               
           </div>
         </a>
-      </li>
+      
               
      </>
 

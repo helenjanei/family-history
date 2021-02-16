@@ -4,7 +4,7 @@ import '../App.css';
 function MarriageSection(props) {
   return ( 
   <>
-      <li className='cards__item'>
+   
         <a className='cards__item__link' href={props.url}>
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img
@@ -17,7 +17,7 @@ function MarriageSection(props) {
             <h5 className='cards__item__text'>{props.text}</h5>
           </div>
         </a>
-      </li>
+      
 
      </>
   );

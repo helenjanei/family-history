@@ -70,7 +70,7 @@ text-align: center
 
 .cards__item {
   display: flex;
-  flex: 1;
+  flex: 2;
   margin: 0 1rem;
   border-radius: 10px;
   color: #2B2D2F;
@@ -142,7 +142,24 @@ text-align: center
   color: #252e48;
   font-size: 18px;
   line-height: 24px;
+  padding-bottom: 9px;
+  text-align: justify;
 }
+
+.btns {
+ padding: 8px 20px;
+ border-radius: 2px;
+ outline: none;
+ border: none;
+ cursor: pointer;
+ background-color: #EFEBD8;
+ color: #2B2D2F;
+ border: 1px solid #EFEBD8;
+  padding: 8px 20px;
+  font-size: 18px;
+  align-items: center;
+}
+
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
@@ -153,12 +170,14 @@ text-align: center
 @media only screen and (min-width: 1024px) {
   .cards__items {
     display: flex;
+    
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+    
   }
 }
 

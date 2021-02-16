@@ -1,18 +1,26 @@
 
 import '../App.css';
 
-function DeathSection() {
+function DeathSection(props) {
   return (
-    <div className="death-section">
-      
-  <div className="death-pic card">
-Death pic
-  </div>
-  <div className="death-section card">
-Death section
-  </div>
- 
-    </div>
+ <>
+     
+        <a className='cards__item__link' href={props.url}>
+          <figure className='cards__item__pic-wrap' data-category={props.label}>
+            <img
+              className='cards__item__img'
+                           src={props.src}
+            />
+          </figure>
+          <div className='cards__item__info'>
+            <h5 className='cards__item__text'>{props.text}</h5>
+          </div>
+        </a>
+     
+
+     </>
+
+
   );
 }
 

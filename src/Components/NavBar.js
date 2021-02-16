@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+import Button  from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -76,7 +76,7 @@ function Navbar() {
                 to='/contact'
                              
               >
-          {button && <Button buttonStyle='btn--outline' to='/contact'>CONTACT</Button>}</Link>
+          <Button  to='/contact'>CONTACT</Button>}</Link>
         </div>
       </nav>
     </>

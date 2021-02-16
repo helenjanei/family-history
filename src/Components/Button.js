@@ -1,35 +1,32 @@
 import React from 'react';
-import './Button.css';
 
+import {
+  Menu,
+  MenuList,
+  MenuButton,
+  MenuItem,
+  MenuLink,
+} from "@reach/menu-button";
+import "@reach/menu-button/styles.css";
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
-
-const SIZES = ['btn--medium', 'btn--large'];
-
-export const Button = ({
-  to,
-  children,
-  type,
-  onClick,
-  buttonStyle,
-  buttonSize
-}) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle)
-    ? buttonStyle
-    : STYLES[0];
-
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-
+function Button() {
   return (
-   
-      <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-        onClick={onClick}
-        type={type}
-        to={to}
-      >
-        {children}
-      </button>
-    
-  );
+   <Menu>
+      <MenuButton className='btns'>
+        Actions <span aria-hidden>▾</span>
+      </MenuButton>
+      <MenuList className='btns'>
+        <MenuItem onSelect={() => alert("Download")}>Download</MenuItem>
+        <MenuItem onSelect={() => alert("Copy")}>Create a Copy</MenuItem>
+        <MenuItem onSelect={() => alert("Mark as Draft")}>
+          Mark as Draft
+        </MenuItem>
+        <MenuItem onSelect={() => alert("Delete")}>Delete</MenuItem>
+        <MenuLink target='_blank' as="a" href="https://reacttraining.com/workshops/">
+          Attend a Workshop
+        </MenuLink>
+      </MenuList>
+    </Menu>
+  )
 };
+export default Button;

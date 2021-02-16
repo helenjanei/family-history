@@ -1,23 +1,27 @@
 
 import '../App.css';
 
-function LifeSummarySection() {
+function LifeSummarySection(props) {
   return (
-    <div className="life-summary-section">
+    <>
+       
+        <a className='cards__item__link' target='_blank' href={props.url}>
+          <figure className='cards__item__pic-wrap' data-category={props.label}>
+            <img
+              className='cards__item__img'
+              
+              src={props.src}
+              />
+          </figure>
+          <div className='cards__item__info'>
+            <h5 className='cards__item__text'> {props.text}</h5>
+            <h5 className='cards__item__text'> {props.text2}</h5>
+            <h5 className='cards__item__text'> {props.text3}</h5>
+          </div>
+        </a>
       
-  <div className="life-summary card">
-Life summary
-  </div>
-  <div className="life-pic card">
-Life pic
-  </div>
-  <div className="life-questions card">
-Questions
-  </div>
-  <div className="find-out-more card">
-    Clcik here to learn more
-  </div>
-    </div>
+       
+     </>
   );
 }
 

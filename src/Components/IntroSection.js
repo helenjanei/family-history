@@ -8,7 +8,7 @@ import './introSection.css'
 function IntroSection(props) {
   return (
       <>
-      <li className='cards__item'>
+      
         <a className='cards__item__link' href={props.url}>
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img
@@ -20,7 +20,7 @@ function IntroSection(props) {
             <h5 className='cards__item__text'>{props.text}</h5>
           </div>
         </a>
-      </li>
+    
 
      </>
      
