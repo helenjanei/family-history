@@ -6,10 +6,15 @@ import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
 import LifeSummarySection from '../Components/LifeSummarySection'
-import ParentsLinkSection from '../Components/ParentsLinkSection'
-import familyTree from '../Assets/BAMarten/BAM-family-tree.jpg'
-import birthMap from '../Assets/BAMarten/BAM-Birth-map.jpg'
-import birthMap1862 from '../Assets/BAMarten/BAM-Birth-Map1862.png'
+import familyTree from '../Assets/TJMarten/familyTree.png'
+import birthMap from '../Assets/TJMarten/birthmap.png'
+import birthCertificate from '../Assets/TJMarten/COL688468_2020-1-THOMAS_JOHN_MARTEN.pdf'
+import birthCert from '../Assets/TJMarten/birthCirt.png'
+import census1851 from '../Assets/TJMarten/1851Census.png'
+import censusMap1851 from '../Assets/TJMarten/1851censusMap.png'
+
+
+
 import census1891 from '../Assets/BAMarten/1891Census.png'
 import censusMap1891 from '../Assets/BAMarten/1891CensusMap.png'
 import house1901 from '../Assets/BAMarten/house1901.jpeg'
@@ -20,51 +25,52 @@ import census1911 from '../Assets/BAMarten/1911Census.png'
 import deathRecord from '../Assets/BAMarten/deathRecord.png'
 import fredJob from '../Assets/BAMarten/fredJob.png'
 import charlesNavy from '../Assets/BAMarten/GeorgeNavy.png'
-import victorianLady from '../Assets/BAMarten/victorianlady.png'
 import Button from '../Components/Button'
 
-function BAMPersonMaster() {
-const relatives1891 = ['My father Thomas, 45, an insurance agent', 'My mother Selina, listed as 28', 'My two older half sisters - Gertrude 16, and Mary 15', 'I am listed as age 9 and a Scholar', 'My younger brother Frederick, 5, and also listed as a scholar', 'We no longer have a live in maid']
+function TJMPersonMaster() {
+const relatives1851 = ['My father Richard, 35, a shoe maker', 'My mother Susannah, 35, a dressmaker', 'My older brother Alfred, 8, scholar', 'I am listed as age 6 and a Scholar', 'My younger brother Walter, 4', 'My younger sister Mary, 2.']
 const relatives1901 = ["My father Thomas, 56 and now lists 'agent for the Gresham assurance society' as his occupation", 'My mother Selina, 39', 'My older half sister Kate, 24', "I am 19 and my occupation is 'shorthand and type writer'", "My brother Frederick, 16, and an 'assistant to ghast collector'", 'My youngest brother Charles, 9' ]
 const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the district council,", 'I am 29', 'Our son Donald Graham, 2, who is your great-grandfather', 'Our youngest son George, aged 1']
 
   return (
   <div className="cards"> 
-    <h1> Beatrice Annie Wilkinson </h1>
-    <h2> (nee Marten) </h2>
-    <h4> 1882-1938 </h4> 
+    <h1> Thomas John Marten </h1>
+    <h4> 1844-1907 </h4> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
        <li className='cards__item'>
-          <IntroSection label='who am I?' text='My name is Beatrice and I am your great-great-grandmother' src={familyTree} url={familyTree}/>
+          <IntroSection label='who am I?' text='My name is Thomas and I am your great-great-great-grandfather' src={familyTree} url={familyTree}/>
 
 
-          <BirthSection url="https://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961" text="I was born at 6 Wellington Terrace, Tranmere, Birkenhead on 10 May 1881. 
+          <BirthSection url="https://www.google.com/maps/place/14+Burlington+St,+Kemptown,+Brighton/@50.8190072,-0.1240274,17z/data=!4m13!1m7!3m6!1s0x487585bb654c6aff:0x34210cc84b274609!2s14+Burlington+St,+Kemptown,+Brighton!3b1!8m2!3d50.8189713!4d-0.1239013!3m4!1s0x487585bb654c6aff:0x34210cc84b274609!8m2!3d50.8189713!4d-0.123901birthMao" text="I was born on the 25th December 1844, at 14 Burlington Street, Brighton. 
          " 
-          text2= "My middle name Annie is the name of my father's late first wife, my half sister's mother."
-          text3='I lived with my father Thomas, who was 35 and an Insurance Agent and my mother Selina who was 20. '
-          src={birthMap1862}
+          text2= ""
+          text3=' '
+          src={birthMap}
           label='Birth'
           
-          url2='https://maps.nls.uk/view/102340990'
-          text4="My half-sister Kate, was age 6 also lived with us, but not my sister Gertrude who would be aged 5, but she is back with us in the next census"
-          text5="Lastly, we had a servant named Margaret Howe living with us, who was aged 18."
-          src2={birthMap}
+          url2={birthCertificate}
+          text4="My father was Richard Marten, cordwainer (shoemaker), and my mother was Susannah nee Solomon."
+          text5=""
+          src2={birthCert}
           />
           </li>
     
         <li className='cards__item'> 
+
           <CensusSection 
-          label='1891 Census'
-          text='In 1891 I was aged 9 and we had moved house, over the River Mersey to 6 Ponsonby Street, Toxteth (since demolished, between Cawdor and Eversley Street on modern maps).'
-          url='https://maps.nls.uk/view/101104295'
-          src2={census1891}
+          label='1851 Census'
+          text='In 1851 I was aged 6 and we had moved house, to 122 London Road, Brighton.'
+          url='https://www.google.com/maps/place/122+London+Rd,+Brighton/@50.8287478,-0.1399042,15z/data=!4m5!3m4!1s0x4875859ddd6cc525:0x2ff1198bd3d532e0!8m2!3d50.830489!4d-0.13602'
+          src={censusMap1851}
+
+
+          src2={census1851}
           label2='Who did I live with?'
-          url2='https://www.google.com/maps/place/Ponsonby+Street/@53.3938342,-2.955199,18z/data=!4m13!1m7!3m6!1s0x487b20fcceadfac9:0x6869ee89af0503d1!2sCawdor+St,+Liverpool!3b1!8m2!3d53.3935828!4d-2.9564909!3m4!1s0x0:0x443ca74ffdcde922!8m2!3d53.394255!4d-2.9549816'
-          src={censusMap1891}
+          url2={census1851}
           text2='I lived with'
-          relatives={relatives1891}
+          relatives={relatives1851}
           
           />
           </li>
@@ -133,18 +139,7 @@ text3="He died in 1962 at the Wharfdale hospital in Otley."
 />
 
 </li>
-<li className='cards__item'> 
 
-<ParentsLinkSection label='Father'
-
-src="https://images.twinkl.co.uk/tr/image/upload/illustation/Victorian-Clerk-Writing----General-People-Desk-Worker-History-Secondary.png"
-text="Find out about my father - Thomas John Marten " />
-
-<ParentsLinkSection label='Mother'
-src={victorianLady}
-
-text="Find out about my mother - Selina " />
-</li>
 
   <Button classname='btns'/>
     </div>
@@ -155,4 +150,4 @@ text="Find out about my mother - Selina " />
   );
 }
 
-export default BAMPersonMaster;
+export default TJMPersonMaster;
