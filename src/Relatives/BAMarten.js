@@ -63,7 +63,7 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
           label2='Who did I live with?'
           url2='https://www.google.com/maps/place/Ponsonby+Street/@53.3938342,-2.955199,18z/data=!4m13!1m7!3m6!1s0x487b20fcceadfac9:0x6869ee89af0503d1!2sCawdor+St,+Liverpool!3b1!8m2!3d53.3935828!4d-2.9564909!3m4!1s0x0:0x443ca74ffdcde922!8m2!3d53.394255!4d-2.9549816'
           src={censusMap1891}
-          text2='I lived with'
+          text4='I lived with'
           relatives={relatives1891}
           
           />
@@ -78,7 +78,7 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
           label2='Who did I live with?'
           url2='https://www.google.com/maps/place/Ponsonby+Street/@53.3938342,-2.955199,18z/data=!4m13!1m7!3m6!1s0x487b20fcceadfac9:0x6869ee89af0503d1!2sCawdor+St,+Liverpool!3b1!8m2!3d53.3935828!4d-2.9564909!3m4!1s0x0:0x443ca74ffdcde922!8m2!3d53.394255!4d-2.9549816'
           src2={census1901}
-          text2='I lived with'
+          text4='I lived with'
           relatives={relatives1911}
           
           />
@@ -92,13 +92,14 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
 <CensusSection 
                 
                 label='1911 Census'
-                text="In 1911 I was aged 29, and lived at 11 Ashdale Road Waterloo. This is our house in the middle, with the brown front door."
+                text="In 1911 I was aged 29, and lived at 11 Ashdale Road Waterloo." 
+                text2="This is our house in the middle, with the brown front door."
                 url='https://www.google.com/maps/place/11+Ashdale+Rd,+Waterloo,+Liverpool+L22+9QX/@53.4785408,-3.0299741,17z/data=!3m1!4b1!4m5!3m4!1s0x487b2461119482bd:0x3272ca0641f5412c!8m2!3d53.4785408!4d-3.0277854'
                 src={house1911}
                 label2='Who did I live with?'
                 url2=''
                 src2={census1911}
-                text2='I lived with'
+                text4='I lived with'
                 relatives={relatives1911}
                 
                 />

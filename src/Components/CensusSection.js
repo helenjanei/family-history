@@ -21,6 +21,8 @@ function CensusSection(props) {
           </figure>
           <div className='cards__item__info'>
             <h5 className='cards__item__text'> {props.text}</h5>
+            <h5 className='cards__item__text'> {props.text2}</h5>
+            <h5 className='cards__item__text'> {props.text3}</h5>
           </div>
         </a>
       
@@ -35,7 +37,7 @@ function CensusSection(props) {
           <div className='cards__item__info'>
             <div className='cards__item__text'>
               <h5>
-              {props.text2}
+              {props.text4}
               </h5>
                 <ul>{listRelatives}
                 </ul>              

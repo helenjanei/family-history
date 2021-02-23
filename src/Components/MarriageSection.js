@@ -14,7 +14,10 @@ function MarriageSection(props) {
             />
           </figure>
           <div className='cards__item__info'>
-            <h5 className='cards__item__text'>{props.text}</h5>
+            <h5 className='cards__item__text'>{props.text}</h5> 
+            <h5 className='cards__item__text'>{props.text2}</h5> 
+            <h5 className='cards__item__text'>{props.text3}</h5>
+            <h5 className='cards__item__text'>{props.text4}</h5>
           </div>
         </a>
       
