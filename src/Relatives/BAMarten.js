@@ -79,7 +79,7 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
           url2='https://www.google.com/maps/place/Ponsonby+Street/@53.3938342,-2.955199,18z/data=!4m13!1m7!3m6!1s0x487b20fcceadfac9:0x6869ee89af0503d1!2sCawdor+St,+Liverpool!3b1!8m2!3d53.3935828!4d-2.9564909!3m4!1s0x0:0x443ca74ffdcde922!8m2!3d53.394255!4d-2.9549816'
           src2={census1901}
           text4='I lived with'
-          relatives={relatives1911}
+          relatives={relatives1901}
           
           />
 
