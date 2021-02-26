@@ -28,24 +28,10 @@ import census1939 from '../Assets/SMcNaught/1939register.png'
 import deathRecord from '../Assets/SMcNaught/deathRecord.png'
 import agnes1901 from '../Assets/SMcNaught/1901agnes.png'
 import dukeStreet from '../Assets/SMcNaught/dukeStreet.jpg'
-
-
-
-
-import birthMap from '../Assets/TJMarten/birthmap.png'
-import birthCertificate from '../Assets/TJMarten/COL688468_2020-1-THOMAS_JOHN_MARTEN.pdf'
-import birthCert from '../Assets/TJMarten/birthCirt.png'
-import census1851 from '../Assets/TJMarten/1851Census.png'
-import censusHouse1861 from '../Assets/TJMarten/1861CensusHouse.png'
-import marriage1873 from '../Assets/TJMarten/1873MarriageChurch.jpg'
-import victorianPoplar from '../Assets/TJMarten/victorianPoplar.jpg'
 import electoralRegister1889 from '../Assets/TJMarten/1889ElectoralRegister.png'
 import house1901 from '../Assets/BAMarten/house1901.jpeg'
 import census1901 from '../Assets/BAMarten/1901Census.png'
-import freedomOfLondon from '../Assets/TJMarten/freedomOfLondon.png'
-import walterCensus1871 from '../Assets/TJMarten/walterCensus1871.png'
-import milliner from '../Assets/TJMarten/milliner.jpg'
-import bernardCensus from '../Assets/TJMarten/bernardCensus.png'
+
 
 
 function SMPersonMaster() {

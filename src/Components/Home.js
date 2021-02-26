@@ -6,7 +6,7 @@ import '../App.css';
 function Home() {
   return (
     <>
-    You are home
+ <h1>  You are home  </h1>  
     </>
   );
 }
