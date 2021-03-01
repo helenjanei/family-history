@@ -5,7 +5,7 @@ import '../App.css';
 function CensusSection(props) {
   const relatives = props.relatives
   const listRelatives = relatives.map((relative, i) => 
-  <li key={i} >{relative}</li>)
+  <li key={i} className='census_li' >{relative}</li>)
 
   return (
 
@@ -39,8 +39,8 @@ function CensusSection(props) {
               <h5>
               {props.text4}
               </h5>
-                <ul>{listRelatives}
-                </ul>              
+                <ol>{listRelatives}
+                </ol>              
               </div>
               
           </div>

@@ -30,9 +30,12 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
 
   return (
   <div className="cards"> 
+  <div className="title"> 
     <h1> Beatrice Annie Wilkinson </h1>
     <h2> (nee Marten) </h2>
     <h4> 1882-1938 </h4> 
+  
+  </div>
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
@@ -42,7 +45,7 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
 
           <BirthSection url="https://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961" text="I was born at 6 Wellington Terrace, Tranmere, Birkenhead on 10 May 1881. 
          " 
-          text2= "My middle name Annie is the name of my father's late first wife, my half sister's mother."
+          text2= "My middle name Annie is the name of my father's late first wife, my half sisters' mother."
           text3='I lived with my father Thomas, who was 35 and an Insurance Agent and my mother Selina who was 20. '
           src={birthMap1862}
           label='Birth'

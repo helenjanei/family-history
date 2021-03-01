@@ -42,8 +42,8 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Support',
-    path: '/support',
+    title: 'Ricahrd Marten 1816-1884',
+    path: '/RichardMarten',
     icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
   }

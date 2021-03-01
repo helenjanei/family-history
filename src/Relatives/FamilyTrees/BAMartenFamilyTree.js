@@ -1,24 +1,45 @@
 
 import '../../App.css';
+import InfoSection from '../../Components/InfoSection'
+import BAMPersonMaster from '../BAMarten'
 
-function BAMFamilyTree(props) {
+function BAMFamilyTree() {
   return (
  <>
-     
-        <a className='cards__item__link' href={props.url}>
-          <figure className='cards__item__pic-wrap' data-category={props.label}>
-            <img
-              className='cards__item__img'
-                           src={props.src}
-            />
-          </figure>
-          <div className='cards__item__info'>
-            <h5 className='cards__item__text'>{props.text}</h5>
-          </div>
-        </a>
-     
+     <li className='cards__item'> 
 
-     </>
+        <InfoSection url={BAMPersonMaster} label='Beatrice Annie Marten 1881-1938' />
+  
+            
+      </li>
+<li className='cards__item'> 
+
+        <InfoSection />
+  <InfoSection/>
+            
+      </li>
+
+<li className='cards__item'> 
+
+        <InfoSection />
+  <InfoSection />
+             <InfoSection />
+  <InfoSection />
+
+      </li>
+      <li className='cards__item'> 
+
+        <InfoSection />
+  <InfoSection />
+             <InfoSection />
+  <InfoSection />
+        <InfoSection />
+  <InfoSection />
+             <InfoSection />
+  <InfoSection />
+      </li>
+
+</>
 
 
   );

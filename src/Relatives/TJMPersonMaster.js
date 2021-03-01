@@ -91,7 +91,7 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
            label='1861 Census'
             text="In 1861 I was aged 16. I am not on the same census as my parents and siblings, and haven't been found on a census yet."
             text2="My family are living at 41 Sidney Street,  Brighton."
-           text3="My older brother Alfred is living in Lambeth, London, with my uncle Albert Box, who is a 'merchant'. Alfred is listed as a short hand writer."
+           text3="My older brother Alfred is living in Lambeth, London, with our cousin Albert Box, who is a 'merchant'. Alfred is listed as a short hand writer."
             url='https://www.google.co.uk/maps/place/41+Sydney+St,+Brighton+BN1+4EP/@50.8271728,-0.1399909,17z/data=!3m1!4b1!4m5!3m4!1s0x487585757ee0b967:0xbab742b44bd37610!8m2!3d50.8271728!4d-0.1378022?hl=en-GB&authuser=0'
            src={censusHouse1861}
 

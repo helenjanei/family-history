@@ -34,6 +34,7 @@ function BirthSection(props) {
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{props.text4}</h5>
             <h5 className='cards__item__text'>{props.text5}</h5>
+            <h5 className='cards__item__text'>{props.text6}</h5>
           </div>
         </a>
       
