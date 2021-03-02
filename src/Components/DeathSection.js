@@ -5,7 +5,7 @@ function DeathSection(props) {
   return (
  <>
      
-        <a className='cards__item__link' href={props.url}>
+        <a className='cards__item__link' target='_blank' href={props.url}>
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img
               className='cards__item__img'

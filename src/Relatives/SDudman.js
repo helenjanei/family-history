@@ -7,41 +7,20 @@ import MarriageSection from '../Components/MarriageSection'
 import InfoSection from '../Components/InfoSection'
 import DeathSection from '../Components/DeathSection'
 import Button from '../Components/Button'
-import birthPic from '../Assets/HSolomon/birthPic.jpg'
-import birthPic2 from '../Assets/HSolomon/birthPic2.jpg'
+import birthRecord from '../Assets/SDudman/birthRecord.png'
+import birthPic from '../Assets/SDudman/birthPic.jpg'
+
 import familyTree from '../Assets/HSolomon/familyTree.png'
 import marriageRecord from '../Assets/HSolomon/marriageRecord.png'
 import birthPic3 from '../Assets/SSolomon/birthPic.jpg'
 import birthPic4 from '../Assets/SSolomon/birthPic2.jpg'
-import taxRecord1814 from '../Assets/HSolomon/1814taxRecord.png'
+
 import census1841 from '../Assets/HSolomon/1841census.png'
 import censusMap1841 from '../Assets/HSolomon/1841censusMap.png'
-import deathRecord from '../Assets/HSolomon/deathRecord.png'
+import takingTheCensus from '../Assets/SDudman/taking-the-census-mary-evans-picture-library.jpg'
+import deathImage from '../Assets/SDudman/the-london-bridge-coach-at-cheapside-william-de-long-turner.jpg'
 
-
-
-
-
-
-import baptism from '../Assets/SSolomon/baptism.png'
-import weddingMap from '../Assets/SSolomon/weddingMap.png'
-import birthCert from '../Assets/TJMarten/birthCirt.png'
-import census1851 from '../Assets/TJMarten/1851Census.png'
-import censusHouse1861 from '../Assets/TJMarten/1861CensusHouse.png'
-import census1861 from '../Assets/TJMarten/1861Census1.png'
-import census1871 from '../Assets/SSolomon/1871Census.png'
-import censusPic1871 from '../Assets/SSolomon/1871pic.jpg'
-import milliner from '../Assets/TJMarten/milliner.jpg'
-import census1881 from '../Assets/SSolomon/1881census.png'
-import censusHouse1881 from '../Assets/SSolomon/1881censusHouse.png'
-import deathRichard from '../Assets/SSolomon/deathRichard.jpeg'
-import deathWalter from '../Assets/SSolomon/deathWalter.jpg'
-import censusHouse1891 from '../Assets/SSolomon/1891CensusHouse.png'
-import census1891 from '../Assets/SSolomon/1891Census.png'
-import deathPic from '../Assets/SSolomon/deathPic.jpg'
-import marriage1873 from '../Assets/TJMarten/1873MarriageChurch.jpg'
-
-function HSPersonMaster() {
+function SDPersonMaster() {
 
   
 const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25', "My daughter Anne, 18", "Elizabeth Solomon, 86", "Henry Moore, 25, Clerk", "J George 25, clerk", "Sophia George, 20", "Sophie George, 4", "Edmund George, 3", "George ?, 24", "Robert July(?), 48"]
@@ -50,27 +29,27 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
 
   return (
   <div className="cards"> 
-    <h1> Henry Solomon  </h1>
-  
-    <h4> 1771-1845 </h4> 
+    <h1> Susannah Maria Solomon  </h1>
+  <h2>nee Dudman</h2>
+    <h4> 1767 - 1865 </h4> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
           <li className='cards__item'>
-            <IntroSection label='Who am I?' text='My name is Henry and I am your great-great-great-great-great-grandfather' src={familyTree} url={familyTree}/>
+            <IntroSection label='Who am I?' text='My name is Susannah and I am your great-great-great-great-great-grandmother' src={familyTree} url={familyTree}/>
 
 
-            <BirthSection url="" text="I was born in 1771 in Truro, Cornwall" text2="I was christened on the 7th June 1772 at St Mary's Church Truro, (which was torn down and replaced by Truro cathedral in 1880)." 
+            <BirthSection url="" text="I was born on the 25th October, 1767 in Piccadilly, London" text2="I was christened on the 17th November 1767 at St James' Church, Piccadilly." 
          
-         src={birthPic}
+         src={birthRecord}
             label='Birth'
-            url="http://www.trurouncovered.co.uk/Religion_6506.aspx"
+            url={birthRecord}
             
-            src2={birthPic2}
-           
-            text4="My father was James Solomon, 40, and my mother was Mary nee Crossman, 34."
-          text5="I was my parent's 14th child of 17. "
-          text6="I have a twin brother, William, who shares his name with two of our older brothers who died before they were over a year old."
+            src2={birthPic}
+           url2="https://www.sjp.org.uk/historybuilding.html"
+            text4="My father was William Dudman, 24, and my mother was Elizabeth nee Brown, 19."
+          text5="I was my parent's second child of 4, all girls. "
+         
             label2='Birth'
             />
           </li>
@@ -78,8 +57,8 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
 
           <li className='cards__item'>
             <MarriageSection  url={marriageRecord} label='Marriage' src={marriageRecord} 
-             text="I married Susannah Dudman, 27, on the 17th September 1795, at St George, Hanover Square, London."
-             text2="I was aged 24."
+             text="I married Henry Solomon, 24, on the 17th September 1795, at St George, Hanover Square, London."
+             text2="I was aged 27."
         />
 
            <BirthSection url="" text="Between 1796 and 1811 we had 6 children, three girls and two boys." 
@@ -91,7 +70,7 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
             
             label2='Children'
             src2={birthPic3}
-            />  <InfoSection url={taxRecord1814} label='Tax Record' src={taxRecord1814} text='In 1814 there is a tax record of my being a tenant at a property in Westminster, possibly on Newcastle Street, which no longer seems to exist. '/>
+            />  
             </li>
 
 <li className='cards__item'> 
@@ -107,9 +86,9 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
           
            relatives={relatives1841}
            />
-
- <DeathSection  url={deathRecord} label='Death' src={deathRecord} text='I died on the 13th December 1845, at the age of 74.' text2="I am recorded as living at 7 Stanhope Street, Clare Market at the time of my death."
- text3="Clare Market is very close to St Clement Danes, however there is no Stanhope Street in the immediate vicinity on modern maps."/>
+ <InfoSection label="1851/61 Census'" text='Although I am still alive, I have not yet been found on the 1851 or 1861 census.' src={takingTheCensus} url='https://fineartamerica.com/featured/taking-the-census-mary-evans-picture-library.html'/>
+ <DeathSection  url={deathImage} label='Death' src={deathImage} text='There are the deaths of two different Susannah Solomon registered in London after 1841. One is for 1867 and the other 1865, which would have made me 98 or 100 respectively.' text2="More likely I have died prior to the 1851 census and a record cannot be found."
+ />
 </li>
 
 
@@ -124,4 +103,4 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
 }
 
 
-export default HSPersonMaster;
+export default SDPersonMaster;

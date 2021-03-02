@@ -43,14 +43,16 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
           <IntroSection label='who am I?' text='My name is Beatrice and I am your great-great-grandmother' src={familyTree} url={familyTree}/>
 
 
-          <BirthSection url="https://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961" text="I was born at 6 Wellington Terrace, Tranmere, Birkenhead on 10 May 1881. 
-         " 
+          <BirthSection 
+          url='https://maps.nls.uk/view/102340990'
+          text="I was born at 6 Wellington Terrace, Tranmere, Birkenhead on 10 May 1881. 
+          " 
           text2= "My middle name Annie is the name of my father's late first wife, my half sisters' mother."
           text3='I lived with my father Thomas, who was 35 and an Insurance Agent and my mother Selina who was 20. '
           src={birthMap1862}
           label='Birth'
           
-          url2='https://maps.nls.uk/view/102340990'
+          url2="https://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961" 
           text4="My half-sister Kate, was age 6 also lived with us, but not my sister Gertrude who would be aged 5, but she is back with us in the next census"
           text5="Lastly, we had a servant named Margaret Howe living with us, who was aged 18."
           src2={birthMap}
