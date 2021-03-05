@@ -5,11 +5,11 @@ import BirthSection from '../Components/BirthSection'
 import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
-import LifeSummarySection from '../Components/LifeSummarySection'
+import LinkSection from '../Components/LinkSection'
 import InfoSection from '../Components/InfoSection'
 import Button from '../Components/Button'
 import birthPic2 from '../Assets/JMcNaught/birthPic2.png'
-import familyTree from '../Assets/JMcNaught/familyTree.png'
+import familyTree from '../Assets/JMcNaught/birthMap.png'
 import birthMap2 from '../Assets/JMcNaught/birthMap2.png'
 import marriageRecord from '../Assets/JMcNaught/marriageRecord.png'
 import censusMap1851 from '../Assets/JMcNaught/1851censusMap.png'
@@ -21,29 +21,11 @@ import census1871 from '../Assets/SMcNaught/1871census.png'
 import pubGirl from '../Assets/SMcNaught/1871Pub.jpeg'
 import deathRecord from '../Assets/JMcNaught/deathRecord.png'
 import deathRecord2 from '../Assets/JMcNaught/deathRecord2.png'
+import deathPic from '../Assets/JMcNaughtSr/deathPic.jpg'
+import childrenMap from '../Assets/JMcNaughtSr/childrenMap.png'
 
 
-
-
-import marriage1880 from '../Assets/TJMarten/1880Marriage.png'
-import marriageChurch1880 from '../Assets/TJMarten/1880marriageChurch.jpg'
-import census1881 from '../Assets/TJMarten/1881Census.png'
-import censusMap1881 from '../Assets/BAMarten/BAM-Birth-Map1862.png'
-import census1891 from '../Assets/BAMarten/1891Census.png'
-import censusMap1891 from '../Assets/BAMarten/1891CensusMap.png'
-import censusMap1911 from '../Assets/SMcNaught/1911censusMap.png'
-import census1911 from '../Assets/SMcNaught/1911census.png'
-import house1939 from '../Assets/SMcNaught/1939house.png'
-import census1939 from '../Assets/SMcNaught/1939register.png'
-import agnes1901 from '../Assets/SMcNaught/1901agnes.png'
-import dukeStreet from '../Assets/SMcNaught/dukeStreet.jpg'
-import electoralRegister1889 from '../Assets/TJMarten/1889ElectoralRegister.png'
-import house1901 from '../Assets/BAMarten/house1901.jpeg'
-import census1901 from '../Assets/BAMarten/1901Census.png'
-
-
-
-function JMcPersonMaster() {
+function JMcNPersonMaster() {
 const relatives1851 = ["My father-in-law Andrew Buchanan, 65, 'baker master'", "My wife Elizabeth, 26", "Myself, 28, 'joiner", "Helen Maxwell, 25, servant", "Thomas Oneal, 14, servant", "Samuel Mar, indentured(?) or servant(?), 19, Baker" ]
 
 const relatives1861 = ["Myself John, 38, 'joiner/master'", "My wife Elizabeth, 37, 'joiner's wife'", "Daughter Agnes, 4, 'joiner's daughter'.", "Selina, 3 months, and also a 'joiner's daughter'.", "Mary Mitchner, boarder, 36, 'possession of a lively-hood'", "Mary Murphy, 17, servant" ]
@@ -131,12 +113,7 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
          
            relatives={relatives1871}
            />
-          </li>
-
-        
-
-        
- <li className='cards__item'> 
+      
 
   <DeathSection  url={deathRecord2} label='Death' src={deathRecord} text='I lived to age 48, and died in May 1st 1871.' 
   text2="My abode on the cemetery register is recorded as 67 Walton Lane, and my profession as a 'Joiner'." 
@@ -144,7 +121,12 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
   text4="My effects came to under £300 probate was given to my widow Elizabeth." />
             
             </li>
-           
+           <li className='cards__item'>     
+
+ <LinkSection label="John McNaught 1796-1850" to='/JohnMcNaughtSr' src={deathPic}/>
+  <LinkSection label="Marion Mcjanet 1799-1851" to='/MarionMcjanet' src={childrenMap}/>
+
+</li>
 
 
   <Button classname='btns'/>
@@ -157,4 +139,4 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
 }
 
 
-export default JMcPersonMaster;
+export default JMcNPersonMaster;

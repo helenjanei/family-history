@@ -12,10 +12,14 @@ import JMPersonMaster from './Relatives/JMarten'
 import HSPersonMaster from './Relatives/HSolomon'
 import SDPersonMaster from './Relatives/SDudman'
 import JMcPersonMaster from './Relatives/JMcNaught'
+import JMcSrPersonMaster from './Relatives/JMcNaughtSr'
+import MMcJPersonMaster from './Relatives/MMcJannet'
 import EBPersonMaster from './Relatives/EBuchanan'
-import BAMFamilyTree from './Relatives/FamilyTrees/BAMartenFamilyTree'
-import Wilkinson from './Components/Wilkinson'
-
+import ABPersonMaster from './Relatives/ABuchanan'
+import SPPersonMaster from './Relatives/SPhillips'
+import Marten from './Relatives/Marten'
+import Wilkinson from './Relatives/Wilkinson'
+import Ingham from './Relatives/Ingham'
 function App() {
   return (
   <>
@@ -24,17 +28,26 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
            <Route path='/Wilkinson' exact component={Wilkinson} />
-          <Route path='/Marten' exact component={BAMFamilyTree} />
+         <Route path='/Ingham' exact component={Ingham} />
+         
+         
+         
+         
+         <Route path='/Marten' exact component={Marten} />
           <Route path='/BeatriceAnnieMarten' component={BAMPersonMaster} />
           <Route path='/ThomasJohnMarten' component={TJMPersonMaster} />
            <Route path='/SelinaMcNaught' component={SMPersonMaster} />
             <Route path='/JohnMcNaught' component={JMcPersonMaster} />
+          <Route path='/JohnMcNaughtSr' component={JMcSrPersonMaster} />
+          <Route path='/MarionMcJanet' component={MMcJPersonMaster} />
             <Route path='/ElizabethBuchanan' component={EBPersonMaster} />
+          <Route path='/AndrewBuchanan' component={ABPersonMaster} />
+          <Route path='/SelinaPhillips' component={SPPersonMaster} />
           <Route path='/SusannahSolomon' component={SSPersonMaster} />
           <Route path='/RichardMarten' component={RMPersonMaster} />
- <Route path='/JohnMarten' component={JMPersonMaster} />
- <Route path='/HenrySolomon' component={HSPersonMaster} /> 
- <Route path='/SusannahDudman' component={SDPersonMaster} />
+         <Route path='/JohnMarten' component={JMPersonMaster} />
+          <Route path='/HenrySolomon' component={HSPersonMaster} /> 
+        <Route path='/SusannahDudman' component={SDPersonMaster} />
 
 
         </Switch>

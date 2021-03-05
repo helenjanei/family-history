@@ -6,9 +6,11 @@ import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
 import LifeSummarySection from '../Components/LifeSummarySection'
+import LinkSection from '../Components/LinkSection'
 import InfoSection from '../Components/InfoSection'
 import Button from '../Components/Button'
 import birthPic from '../Assets/SMcNaught/walton.png'
+import birthPic2 from '../Assets/SMcNaught/PAY-Victorian-Ghosts.jpg'
 import familyTree from '../Assets/SMcNaught/familyTree.png'
 import census1861 from '../Assets/SMcNaught/1861census.png'
 import censusMap1861 from '../Assets/SMcNaught/1861censusMap.png'
@@ -31,8 +33,9 @@ import dukeStreet from '../Assets/SMcNaught/dukeStreet.jpg'
 import electoralRegister1889 from '../Assets/TJMarten/1889ElectoralRegister.png'
 import house1901 from '../Assets/BAMarten/house1901.jpeg'
 import census1901 from '../Assets/BAMarten/1901Census.png'
-
-
+import birthMap from '../Assets/JMcNaughtSr/birthMap.png'
+import birthPic3 from '../Assets/EBuchanan/St_Peter_Liverpool.jpg'
+import agnesDeath from '../Assets/SMcNaught/agnesRichardDeath.png'
 
 function SMPersonMaster() {
 
@@ -70,7 +73,8 @@ const relatives1939 = ["Charles Marten, 47, 'Clerk soap manufacture'", "Annie, h
             text4="I was the second child of my parents, John McNaught 38, and Elizabeth Buchanan 37."
           
             label2='Birth'
-           
+           src2={birthPic2}
+           url='https://www.mirror.co.uk/news/uk-news/spooky-images-combine-victorian-modern-9326728'
             />
           </li>
     
@@ -207,10 +211,9 @@ const relatives1939 = ["Charles Marten, 47, 'Clerk soap manufacture'", "Annie, h
                relatives={relatives1939}          
                  />
 
-            </li>
- <li className='cards__item'> 
+          
 
-  <DeathSection  url={deathRecord} label='Death' src={deathRecord} text='I lived to age 86, and died on the 3rd July 1947.' text2="In probate my address is given as 8 Wesley Street, Waterloo." text3="However my place of death is recorded as 'Holm Hill, Village Road, West Kirby, Cheshire" text4="My effects came to £1810 1s and probate was given to 'George Wilkinson, retired local government officer'." text5="George Wilkinson was my son-in-law and your great-great-grandfather."/>
+  <DeathSection  url={deathRecord} label='Death' src={deathRecord} text='I lived to age 86, and died on the 3rd July 1947.' text2="In probate my address is given as 8 Wesley Street, Waterloo." text3="However my place of death is recorded as 'Holm Hill, Village Road, West Kirby, Cheshire.'" text4="My effects came to £1810 1s and probate was given to 'George Wilkinson, retired local government officer'." text5="George Wilkinson was my son-in-law and your great-great-grandfather."/>
             
             </li>
             <li className='cards__item'> 
@@ -226,23 +229,25 @@ const relatives1939 = ["Charles Marten, 47, 'Clerk soap manufacture'", "Annie, h
              <LifeSummarySection  url={agnes1901} label='What happened next?' src={agnes1901} 
              
              text="On the 1st March 1892 Agnes was admitted into the Rainhill Asylum, Prescot."
-             text2="In 1899, Agnes' son Richard died at the age of 18." 
+             text2="In 1899, Agnes' son Richard died at the age of 18. His death certificate records the cause of death being 'meningitis epilepsy'." 
           
             text3="On the 1901 census Agnes is listed as being a patient at Rainhill."
             text4="She is recorded as being a 43 year old housewife."
             text5="In the final column she is listed as being 'lunatic' - Lunatic was a general term used at the time to cover all people with mental health problems. " 
             text5="I've been unable to find an 1901 census with Agnes' husband Richard or daughter Amy on. Amy is not listed as living with her aunt Lillias anymore." />
 
-            <LifeSummarySection  url={agnes1901} label='What happened next?' src={agnes1901}  // change to death cirt when it arrives 
-            text="Agne's husband Richard died in 1906, at the age of 53." 
-            text2="Agnes died at Rainhill asylum in 1910." 
-            text3="The last surving member of the family, Amy, is absent from the 1911 census as well." 
-            text4="However Amy appears, at age 60 and still under her maiden name on the 1939 register - living at 65 Sheil Road, Liverpool. She is living with a lady called Alice Bleak, and Amy is listed as her 'companion'" 
+            <LifeSummarySection  url={agnesDeath} label='What happened next?' src={agnesDeath}  // change to death cirt when it arrives 
+            text="Agnes' husband Richard died in 1906, at the age of 53." 
+            text2="Agnes died at Rainhill asylum in 1910. Her death certificate records 'chronic renal disease' as her cause of death." 
+            text3="The last surviving member of the family, Amy, is absent from the 1911 census as well." 
+            text4="However Amy appears, at age 60 and still under her maiden name on the 1939 register - living at 65 Sheil Road, Liverpool. She is living with a lady called Alice Bleak, and Amy is listed as her 'companion'." 
             text5="Amy died on the 9th November 1945 at age 66. She left behind an estate of £60 10s. 11d. which she willed to 'Lillias Evans - widow', her aunt Lillias, who died in 1950 at the age of 92." />
 
-            
+              </li>
+            <li className='cards__item'> 
+ <LinkSection label="John McNaught 1823-1971" to='/JohnMcNaught' src={birthMap}/>
+  <LinkSection label="Elizabeth Buchanan 1824-1896" to='/ElizabethBuchanan' src={birthPic3}/>
 </li>
-
 
   <Button classname='btns'/>
     </div>

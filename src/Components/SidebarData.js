@@ -17,15 +17,15 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Beatrice Marten',
-    path: '/BeatriceAnnieMarten',
+    title: 'Ingham',
+    path: '/Ingham',
     icon: <GiAbstract120 />,
     cName: 'nav-text'
   
   },
   {
-    title: 'Thomas John Marten',
-    path: '/ThomasJohnMarten',
+    title: 'Wilkinson',
+    path: '/Wilkinson',
     icon: <Gi3DMeeple />,
     cName: 'nav-text'
   },

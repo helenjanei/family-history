@@ -19,28 +19,6 @@ import censusMap1841 from '../Assets/HSolomon/1841censusMap.png'
 import deathRecord from '../Assets/HSolomon/deathRecord.png'
 
 
-
-
-
-
-import baptism from '../Assets/SSolomon/baptism.png'
-import weddingMap from '../Assets/SSolomon/weddingMap.png'
-import birthCert from '../Assets/TJMarten/birthCirt.png'
-import census1851 from '../Assets/TJMarten/1851Census.png'
-import censusHouse1861 from '../Assets/TJMarten/1861CensusHouse.png'
-import census1861 from '../Assets/TJMarten/1861Census1.png'
-import census1871 from '../Assets/SSolomon/1871Census.png'
-import censusPic1871 from '../Assets/SSolomon/1871pic.jpg'
-import milliner from '../Assets/TJMarten/milliner.jpg'
-import census1881 from '../Assets/SSolomon/1881census.png'
-import censusHouse1881 from '../Assets/SSolomon/1881censusHouse.png'
-import deathRichard from '../Assets/SSolomon/deathRichard.jpeg'
-import deathWalter from '../Assets/SSolomon/deathWalter.jpg'
-import censusHouse1891 from '../Assets/SSolomon/1891CensusHouse.png'
-import census1891 from '../Assets/SSolomon/1891Census.png'
-import deathPic from '../Assets/SSolomon/deathPic.jpg'
-import marriage1873 from '../Assets/TJMarten/1873MarriageChurch.jpg'
-
 function HSPersonMaster() {
 
   
@@ -111,6 +89,39 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
  <DeathSection  url={deathRecord} label='Death' src={deathRecord} text='I died on the 13th December 1845, at the age of 74.' text2="I am recorded as living at 7 Stanhope Street, Clare Market at the time of my death."
  text3="Clare Market is very close to St Clement Danes, however there is no Stanhope Street in the immediate vicinity on modern maps."/>
 </li>
+
+<li className='cards__item'> 
+
+<InfoSection label='Father' text="James Solomon 1731-1809" text2="Born and died in Truro, Cornwall" text3="Had 17 children with his wife." text4=""/>
+<InfoSection label='Mother' text="Mary Crossman 1736-1814" text2="Born and died in Truro, Cornwall" text3="Gave birth to 17 children over 28 years, including three sets of twins." text4="Lost at least three children in infancy, but reused the names." text5="Died aged 78"/>
+
+ </li>
+ <li className='cards__item'> 
+
+<InfoSection label='Father' text="Richard Solomon 1689-1743" text2="Born and died in Truro, Cornwall" text3="Had 10 children with his wife." />
+<InfoSection label='Mother' text="Joanna Speciot 1689-1770" text2="Born and died in Truro, Cornwall" text3="Had 10 children over twenty years" text5="Died aged 53"/>
+
+
+
+<InfoSection label='Father' text="Henry Crossman 1691-1768" text2="Born and died in Truro, Cornwall" text3="Had 9 children with his wife." text4=""/>
+<InfoSection label='Mother' text="Margery Roberts 1695-1771" text2="Born and died in Truro, Cornwall" text3="Gave birth to 9 children over 16 years" text4="Died aged 76."/>
+ </li>
+
+ <li className='cards__item'> 
+
+<InfoSection label='Father' text="Richard Solomon 1659-?" text2="Born in St Columb Minor near Newquay, Cornwall." />
+<InfoSection label='Mother' text="Mary ? 1667 - ?" text2="Born in St Columb Minor near Newquay, Cornwall." />
+
+<InfoSection label='Father' text="Joseph Speciot 1658-1705" text2="Born and died in Truro, Cornwall" />
+<InfoSection label='Mother' text="Jane Hawke 1662-1715" text2="Born and died in Truro, Cornwall" />
+
+
+<InfoSection label='Father' text="Henry Crossman 1657-1709" text2="Born and died in Truro, Cornwall" text3="Married twice, remarried after death of first wife" />
+<InfoSection label='Mother' text="Elizabeth Penalunar 1661-1693" text2="Born and died in Truro, Cornwall" text3="Died aged 32, two days after giving birth to her son John."/>
+
+<InfoSection />
+<InfoSection />
+ </li>
 
 
 

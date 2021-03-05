@@ -6,7 +6,7 @@ import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
 import LifeSummarySection from '../Components/LifeSummarySection'
-import ParentsLinkSection from '../Components/ParentsLinkSection'
+import LinkSection from '../Components/LinkSection'
 import familyTree from '../Assets/BAMarten/BAM-family-tree.jpg'
 import birthMap from '../Assets/BAMarten/BAM-Birth-map.jpg'
 import birthMap1862 from '../Assets/BAMarten/BAM-Birth-Map1862.png'
@@ -22,7 +22,8 @@ import fredJob from '../Assets/BAMarten/fredJob.png'
 import charlesNavy from '../Assets/BAMarten/GeorgeNavy.png'
 import victorianLady from '../Assets/BAMarten/victorianlady.png'
 import Button from '../Components/Button'
-
+import picture1871 from '../Assets/TJMarten/1871Picture.jpg'
+import pubGirl from '../Assets/SMcNaught/1871Pub.jpeg'
 function BAMPersonMaster() {
 const relatives1891 = ['My father Thomas, 45, an insurance agent', 'My mother Selina, listed as 28', 'My two older half sisters - Gertrude 16, and Mary 15', 'I am listed as age 9 and a Scholar', 'My younger brother Frederick, 5, and also listed as a scholar', 'We no longer have a live in maid']
 const relatives1901 = ["My father Thomas, 56 and now lists 'agent for the Gresham assurance society' as his occupation", 'My mother Selina, 39', 'My older half sister Kate, 24', "I am 19 and my occupation is 'shorthand and type writer'", "My brother Frederick, 16, and an 'assistant to ghast collector'", 'My youngest brother Charles, 9' ]
@@ -141,15 +142,15 @@ text3="He died in 1962 at the Wharfdale hospital in Otley."
 </li>
 <li className='cards__item'> 
 
-<ParentsLinkSection label='Father'
+<LinkSection 
+to='/ThomasJohnMarten'
+src={picture1871}
+label="Thomas John Marten 1844-1907" />
 
-src="https://images.twinkl.co.uk/tr/image/upload/illustation/Victorian-Clerk-Writing----General-People-Desk-Worker-History-Secondary.png"
-text="Find out about my father - Thomas John Marten " />
-
-<ParentsLinkSection label='Mother'
-src={victorianLady}
-
-text="Find out about my mother - Selina " />
+<LinkSection 
+src={pubGirl}
+to='/SelinaMcNaught'
+label="Selina McNaught 1861-1947" />
 </li>
 
   <Button classname='btns'/>

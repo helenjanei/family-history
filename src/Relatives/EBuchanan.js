@@ -5,8 +5,8 @@ import BirthSection from '../Components/BirthSection'
 import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
-import LifeSummarySection from '../Components/LifeSummarySection'
 import InfoSection from '../Components/InfoSection'
+import LinkSection from '../Components/LinkSection'
 import Button from '../Components/Button'
 import birthPic from '../Assets/EBuchanan/St_Peter_Liverpool.jpg'
 import familyTree from '../Assets/EBuchanan/familyTree.png'
@@ -22,33 +22,12 @@ import directory1853 from '../Assets/JMcNaught/1853directory.png'
 import census1861 from '../Assets/SMcNaught/1861census.png'
 import census1871 from '../Assets/SMcNaught/1871census.png'
 import pubGirl from '../Assets/SMcNaught/1871Pub.jpeg'
-import deathRecord from '../Assets/JMcNaught/deathRecord.png'
-import deathRecord2 from '../Assets/JMcNaught/deathRecord2.png'
 import census1881 from '../Assets/EBuchanan/1881Census.png'
 import house1881 from '../Assets/EBuchanan/1881censusHouse.png'
 import censusPic1891 from '../Assets/EBuchanan/victorian_liverpool2old.jpg'
 import census1891 from '../Assets/EBuchanan/1891census.png'
 import deathPic from '../Assets/EBuchanan/toxteth-park-cemetery.jpg'
-
-
-
-import marriage1880 from '../Assets/TJMarten/1880Marriage.png'
-import marriageChurch1880 from '../Assets/TJMarten/1880marriageChurch.jpg'
-import censusMap1881 from '../Assets/BAMarten/BAM-Birth-Map1862.png'
-
-import censusMap1891 from '../Assets/BAMarten/1891CensusMap.png'
-import censusMap1911 from '../Assets/SMcNaught/1911censusMap.png'
-import census1911 from '../Assets/SMcNaught/1911census.png'
-import house1939 from '../Assets/SMcNaught/1939house.png'
-import census1939 from '../Assets/SMcNaught/1939register.png'
-import agnes1901 from '../Assets/SMcNaught/1901agnes.png'
-import dukeStreet from '../Assets/SMcNaught/dukeStreet.jpg'
-import electoralRegister1889 from '../Assets/TJMarten/1889ElectoralRegister.png'
-import house1901 from '../Assets/BAMarten/house1901.jpeg'
-import census1901 from '../Assets/BAMarten/1901Census.png'
-
-
-
+import birthPic2 from '../Assets/SPhillips/general-view-of-18th-century-liverpool-mary-evans-picture-library.jpg'
 function EBPersonMaster() {
 
 const relatives1841 = ["My father Andrew Buchanan, 55, 'baker'", "My brother David, 20, 'baker something'", "Benjamin, 15, something apprentice", "Charles,10", "Myself, 15"]
@@ -210,8 +189,15 @@ const relatives1891 = ["Elizabeth Wells, 70, dressmaker", "Mary Wells, sister, 6
    />
             
             </li>
-           
 
+         <li className='cards__item'>     
+<LinkSection label="Andrew Buchanan 1785-1859" to='/AndrewBuchanan' src={censusMap1841}
+ />
+
+<LinkSection label="Selina Phillips 1792-1839" to='/SelinaPhillips'
+src={birthPic2}
+ />
+</li>
 
   <Button classname='btns'/>
     </div>

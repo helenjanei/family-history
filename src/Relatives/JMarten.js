@@ -11,7 +11,7 @@ import Button from '../Components/Button'
 import familyTree from '../Assets/JMarten/familyTree.png'
 import birthPic from '../Assets/JMarten/birthPic.jpg'
 import birthPic2 from '../Assets/JMarten/birthPic2.jpg'
-
+import LinkSection from '../Components/LinkSection'
 
 
 
