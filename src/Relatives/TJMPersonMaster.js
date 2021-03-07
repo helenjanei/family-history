@@ -7,6 +7,7 @@ import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
 import LifeSummarySection from '../Components/LifeSummarySection'
 import InfoSection from '../Components/InfoSection'
+import LinkSection from '../Components/LinkSection' 
 import Button from '../Components/Button'
 
 import familyTree from '../Assets/TJMarten/familyTree.png'
@@ -18,7 +19,6 @@ import censusMap1851 from '../Assets/TJMarten/1851censusMap.png'
 import censusHouse1861 from '../Assets/TJMarten/1861CensusHouse.png'
 import census1861 from '../Assets/TJMarten/1861Census1.png'
 import census1871 from '../Assets/TJMarten/1871Census.png'
-import censusMap1871 from '../Assets/TJMarten/1871censusMap.png'
 import picture1871 from '../Assets/TJMarten/1871Picture.jpg'
 import marriage1873 from '../Assets/TJMarten/1873MarriageChurch.jpg'
 import victorianPoplar from '../Assets/TJMarten/victorianPoplar.jpg'
@@ -37,7 +37,9 @@ import freedomOfLondon from '../Assets/TJMarten/freedomOfLondon.png'
 import walterCensus1871 from '../Assets/TJMarten/walterCensus1871.png'
 import milliner from '../Assets/TJMarten/milliner.jpg'
 import bernardCensus from '../Assets/TJMarten/bernardCensus.png'
+import birthPic from '../Assets/RMarten/birthPic.jpg'
 
+import birthPic2 from '../Assets/SSolomon/birthPic2.jpg'
 
 function TJMPersonMaster() {
 const relatives1851 = ['My father Richard, 35, a shoe maker', 'My mother Susannah, 35, a dressmaker', 'My older brother Alfred, 8, scholar', 'I am listed as age 6 and a Scholar', 'My younger brother Walter, 4', 'My younger sister Mary, 2.']
@@ -192,11 +194,11 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
                relatives={relatives1901}          
                  />
 
+             <DeathSection  url={deathRecord} label='Death' src={deathRecord} text='I lived to age 62, and died on the 19th October 1907.'/>
             </li>
 
           <li className='cards__item'> 
             
-             <DeathSection  url={deathRecord} label='Death' src={deathRecord} text='I lived to age 62, and died on the 19th October 1907.'/>
     
              <LifeSummarySection  url={freedomOfLondon} label='What happened next?' src={freedomOfLondon} text="My oldest brother Alfred lived in Hamstead and became a shorthand writer."
             text2="He had a number of children who remained living with him well into adulthood, - including Afred E, who became a dental surgeon, and Frank R, a solicitor in the India Office." text3="Another of his sons, Herbert Walter a chartered accountant, was granted the Freedom Of the City of London in 1912."/>
@@ -204,10 +206,7 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
             <LifeSummarySection  url={walterCensus1871} label='What happened next?' src={walterCensus1871} text="My brother Walter Solomon married in Surrey, and then moved abroad."
             text2="One of his children's birth's is registered in Ontario, Canada, and another in Dresden, Germany." text3="His son Frank Walter was a surveyor and estate agent and was also granted the Freedom Of the City of London in 1919."
             text4="Walter seems to have died in 1890 in Yokohamma, Japan"/>
-</li>
-   <li className='cards__item'> 
-<LifeSummarySection 
-label='What happened next?'
+<LifeSummarySection  label='What happened next?'
 url='https://en.wikipedia.org/wiki/Hatmaking'
 src={milliner}
 text='My sister Mary Maria was a milliner.'
@@ -215,7 +214,6 @@ text2="She married in July 1872 at age 23."
 text3="She died in October 1872."
 
 />
-
            <LifeSummarySection 
 label='What happened next?'
 url={bernardCensus}
@@ -225,6 +223,10 @@ My youngest brother Bernard H became a commercial clerk, and seems to be living 
 text2="It's likely he emigrated and there is possibly an obituary for him in America." 
 
 />
+</li>
+   <li className='cards__item'> 
+<LinkSection label="Richard Marten 1816-1884" to='/RichardMarten' src={birthPic}/>
+  <LinkSection label="Susannah Solomon 1811-1892" to="/SusannahSolomon"src={birthPic2}/>
 </li>
 
   <Button classname='btns'/>

@@ -5,6 +5,7 @@ import BirthSection from '../Components/BirthSection'
 import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
+import LinkSection from '../Components/LinkSection'
 import Button from '../Components/Button'
 import familyTree from '../Assets/SSolomon/familyTree.png'
 import baptism from '../Assets/SSolomon/baptism.png'
@@ -27,7 +28,8 @@ import censusHouse1891 from '../Assets/SSolomon/1891CensusHouse.png'
 import census1891 from '../Assets/SSolomon/1891Census.png'
 import deathPic from '../Assets/SSolomon/deathPic.jpg'
 import marriage1873 from '../Assets/TJMarten/1873MarriageChurch.jpg'
-
+import birthPic5 from '../Assets/HSolomon/birthPic.jpg'
+import birthPic4 from '../Assets/SDudman/birthPic.jpg'
 function SSPersonMaster() {
 
   
@@ -163,6 +165,12 @@ const relatives1891 = ['Sammuel Juniper, Head, 50, Ironmonger', "Jane, his wife,
            />
  <DeathSection  url='http://www.victorianweb.org/places/cities/brighton/2.html' label='Death' src={deathPic} text='I died in Brighton January 1892, at the age of 81.' />
 </li>
+
+<li className='cards__item'> 
+  <LinkSection label="Henry Solomon 1771-1845" to='/HenrySolomon' src={birthPic5} />
+  <LinkSection label="Susannah Dudman 1767-1865" to='/SusannahDudman' src={birthPic4} />
+  </li>
+
   <Button classname='btns'/>
     </div>
     </div>

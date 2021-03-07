@@ -138,11 +138,10 @@ const relatives1881 = ["Emily Atkinson, 43, boarding house keeper", "Emily Eliza
           
            relatives={relatives1881}
            />
-</li>
-<li className='cards__item'> 
 
  <DeathSection  url='https://en.wikipedia.org/wiki/Portmanteau_(luggage)' label='Death' src={deathRichard} text='I died in April 1884, at the age of 68.' />
 </li>
+
 
 
 

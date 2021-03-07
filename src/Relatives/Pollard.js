@@ -11,7 +11,7 @@ import birthPic2 from '../Assets/SSolomon/birthPic2.jpg'
 import birthMap from '../Assets/JMcNaughtSr/birthMap.png'
 import birthPic3 from '../Assets/EBuchanan/St_Peter_Liverpool.jpg'
 
-function BAMFamilyTree() {
+function Pollard() {
   return (
  <> <div className="cards"> 
     <h1> Marten  </h1>
@@ -61,4 +61,4 @@ function BAMFamilyTree() {
   );
 }
 
-export default BAMFamilyTree;
+export default Pollard;

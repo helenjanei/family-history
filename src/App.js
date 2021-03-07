@@ -20,6 +20,9 @@ import SPPersonMaster from './Relatives/SPhillips'
 import Marten from './Relatives/Marten'
 import Wilkinson from './Relatives/Wilkinson'
 import Ingham from './Relatives/Ingham'
+import TPPersonMaster from './Relatives/TPollard'
+import Pollard from './Relatives/Pollard'
+
 function App() {
   return (
   <>
@@ -48,7 +51,8 @@ function App() {
          <Route path='/JohnMarten' component={JMPersonMaster} />
           <Route path='/HenrySolomon' component={HSPersonMaster} /> 
         <Route path='/SusannahDudman' component={SDPersonMaster} />
-
+<Route path='/Pollard' exact component={Pollard} />
+          <Route path='/ThomasPollard' component={TPPersonMaster} />
 
         </Switch>
        
