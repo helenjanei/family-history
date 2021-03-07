@@ -9,9 +9,9 @@ function Wilkinson() {
     <>
     
     <div className="cards"> 
-    <h1> Jane Stella, Donald Marten and Roger  </h1>
+    <h2> Jane Stella, Donald Marten, and Roger Hollins </h2>
   
-    <h2> Wilkinson </h2>
+    <h1> Wilkinson </h1>
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
  <li className='cards__item'> 
@@ -25,7 +25,11 @@ function Wilkinson() {
   <LinkSection label="Marten" to='/Marten'/>
   <LinkSection label="Hollins" to='/Hollins'/>
   <LinkSection label="Dakin" to='/Dakin'/>
-  </li>
+  </li> 
+    <li className='cards__item'> 
+
+  <LinkSection label="Family Scrapbook" to='/WilkinsonScrapbook'/>
+</li>
     </div>
     </div>
     

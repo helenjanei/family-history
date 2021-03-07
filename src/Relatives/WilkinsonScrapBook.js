@@ -1,11 +1,10 @@
 import React from 'react';
 import '../App.css';
-import LinkSection from '../Components/LinkSection'
-import wilkinsonPic from '../Assets/wilkinson.jpg'
+import InfoSection from '../Components/InfoSection'
 
 
 
-function Home() {
+function WilkinsonScrapBook() {
   return (
     <>
     <div className="cards"> 
@@ -13,8 +12,7 @@ function Home() {
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
     <li className='cards__item'> 
-  <LinkSection label="Ingham" text2="" to='/Ingham'/>
-  <LinkSection label="Wilkinson" src={wilkinsonPic} to='/Wilkinson'/>
+  <InfoSection label='Recipies' />
   </li>  
   </div>
     </div>
@@ -24,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default WilkinsonScrapBook;

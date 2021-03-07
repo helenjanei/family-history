@@ -19,7 +19,7 @@ import census1881 from '../Assets/TPollard/1881census.png'
 function TPPersonMaster() {
 const relatives1881 = ['My father Thomas, 33, a joiner', 'My mother Mary, 35', 'My older brother John, 9, scholar', 'I am listed as age 6 and a Scholar', 'Catherine, 3', 'Esther Ann, 1.']
 
-const relatives1881 = ['My father Thomas, 33, a joiner', 'My mother Mary, 35', 'My older brother John, 9, scholar', 'I am listed as age 6 and a Scholar', 'Catherine, 3', 'Esther Ann, 1.']
+const relatives1891 = ['My father Thomas, 33, a joiner', 'My mother Mary, 35', 'My older brother John, 9, scholar', 'I am listed as age 6 and a Scholar', 'Catherine, 3', 'Esther Ann, 1.']
 
   return (
   <div className="cards"> 
@@ -67,12 +67,8 @@ const relatives1881 = ['My father Thomas, 33, a joiner', 'My mother Mary, 35', '
             <CensusSection 
             label='1891 Census'
             text='In 1891 I was aged 16 and my family have moved along Leigh Road to number 384, Westhoughton.'
-            url='
-            src={censusMap1891}
-
-            src2={census1891}
-            label2='Who did I live with?'
-            url2={census1891}
+           
+          
           
              relatives={relatives1891}       
             />

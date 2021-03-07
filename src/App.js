@@ -22,6 +22,7 @@ import Wilkinson from './Relatives/Wilkinson'
 import Ingham from './Relatives/Ingham'
 import TPPersonMaster from './Relatives/TPollard'
 import Pollard from './Relatives/Pollard'
+import WilkinsonScrapbook from './Relatives/WilkinsonScrapBook'
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           <Route path='/' exact component={Home} />
            <Route path='/Wilkinson' exact component={Wilkinson} />
          <Route path='/Ingham' exact component={Ingham} />
-         
+         <Route path='/WilkinsonScrapbook' exact component={WilkinsonScrapbook} />
          
          
          
