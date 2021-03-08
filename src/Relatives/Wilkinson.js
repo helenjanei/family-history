@@ -28,7 +28,8 @@ function Wilkinson() {
   </li> 
     <li className='cards__item'> 
 
-  <LinkSection label="Family Scrapbook" to='/WilkinsonScrapbook'/>
+  <LinkSection label="Family Memories" to='/WilkinsonMemories'/>
+  <LinkSection label="Family Cook book" to='/WilkinsonRecipes'/>
 </li>
     </div>
     </div>
