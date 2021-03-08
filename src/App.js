@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ScrollToTop from './Components/scrollToTop'
 import Home from './Components/Home';
 import NavBar from './Components/NavBar';
 import Form from './Components/signUp/Form'
+
+
 import BAMPersonMaster from './Relatives/BAMarten';
 import TJMPersonMaster from './Relatives/TJMPersonMaster'
 import SMPersonMaster from './Relatives/SMcNaught'
@@ -30,6 +33,7 @@ function App() {
   return (
   <>
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Switch>
           <Route path='/' exact component={Home} />
