@@ -20,7 +20,7 @@ import census1911 from '../Assets/BAMarten/1911Census.png'
 import deathRecord from '../Assets/BAMarten/deathRecord.png'
 import fredJob from '../Assets/BAMarten/fredJob.png'
 import charlesNavy from '../Assets/BAMarten/GeorgeNavy.png'
-import victorianLady from '../Assets/BAMarten/victorianlady.png'
+
 import Button from '../Components/Button'
 import picture1871 from '../Assets/TJMarten/1871Picture.jpg'
 import pubGirl from '../Assets/SMcNaught/1871Pub.jpeg'

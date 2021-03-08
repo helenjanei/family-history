@@ -15,11 +15,14 @@ import birthMap from '../Assets/TPollard/birthMap.png'
 import birthPic from '../Assets/TPollard/birthPic.jpg'
 import censusMap1881 from '../Assets/TPollard/1881censusMap.png'
 import census1881 from '../Assets/TPollard/1881census.png'
+import censusHouse1891 from '../Assets/TPollard/1891censusHouse.png'
+import census1891 from '../Assets/TPollard/1891census.png'
+
 
 function TPPersonMaster() {
 const relatives1881 = ['My father Thomas, 33, a joiner', 'My mother Mary, 35', 'My older brother John, 9, scholar', 'I am listed as age 6 and a Scholar', 'Catherine, 3', 'Esther Ann, 1.']
 
-const relatives1891 = ['My father Thomas, 33, a joiner', 'My mother Mary, 35', 'My older brother John, 9, scholar', 'I am listed as age 6 and a Scholar', 'Catherine, 3', 'Esther Ann, 1.']
+const relatives1891 = ["My father Thomas, 43, a 'calico printer engineer'", 'My mother Mary, 45', "My older brother John, 19, 'calico machine printer'", "I am listed 16 'Calico machine fuller'", "Catherine, 13, 'cotton weaver'", "Esther Ann, 11, scholar", "James, 7, scholar"]
 
   return (
   <div className="cards"> 
@@ -67,8 +70,15 @@ const relatives1891 = ['My father Thomas, 33, a joiner', 'My mother Mary, 35', '
             <CensusSection 
             label='1891 Census'
             text='In 1891 I was aged 16 and my family have moved along Leigh Road to number 384, Westhoughton.'
-           
+            text2="Ours is the white house in the middle, it doesn't look very roomy for seven people!"
+            text3="It's likely my siblings were attending the school closest to us on Leigh road, now called St James' C of E Primary school, and still in the original building."
+            url='https://www.google.com/maps/place/384+Leigh+Rd,+Westhoughton,+Bolton/@53.5383407,-2.5184981,17z/data=!3m1!4b1!4m5!3m4!1s0x487b08763796b285:0x9a6bed6b422b2298!8m2!3d53.5383375!4d-2.5163094'
+            src={censusHouse1891}
+          src2={census1891}
+            label2='Who did I live with?'
+            url2={census1891}
           
+           
           
              relatives={relatives1891}       
             />

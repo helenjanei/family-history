@@ -1,11 +1,11 @@
 	import React from 'react';
 import '../App.css'
 import IntroSection from '../Components/IntroSection'
-import BirthSection from '../Components/BirthSection'
+
 import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
-import LifeSummarySection from '../Components/LifeSummarySection'
+
 import InfoSection from '../Components/InfoSection'
 import Button from '../Components/Button'
 import birthPic from '../Assets/ABuchanan/birthPic.jpg'
