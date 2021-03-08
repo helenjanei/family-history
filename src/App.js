@@ -23,7 +23,8 @@ import Wilkinson from './Relatives/Wilkinson'
 import Ingham from './Relatives/Ingham'
 import TPPersonMaster from './Relatives/TPollard'
 import Pollard from './Relatives/Pollard'
-import WilkinsonScrapbook from './Relatives/WilkinsonScrapBook'
+import WilkinsonMemories from './Relatives/WilkinsonMemories'
+import WilkinsonRecipes from './Relatives/WilkinsonRecipes'
 
 function App() {
   return (
@@ -35,8 +36,8 @@ function App() {
            <Route path='/Form' exact component={Form} />
            <Route path='/Wilkinson' exact component={Wilkinson} />
          <Route path='/Ingham' exact component={Ingham} />
-         <Route path='/WilkinsonScrapbook' exact component={WilkinsonScrapbook} />
-         
+         <Route path='/WilkinsonMemories' exact component={WilkinsonMemories} />
+         <Route path='/WilkinsonRecipes' exact component={WilkinsonRecipes} />
          
          
          <Route path='/Marten' exact component={Marten} />

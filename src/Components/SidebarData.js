@@ -29,22 +29,5 @@ export const SidebarData = [
     icon: <Gi3DMeeple />,
     cName: 'nav-text'
   },
-  {
-    title: 'Selina McNaught',
-    path: '/SelinaMcNaught',
-    icon: <GiAbstract043 />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Susannah Solomon',
-    path: '/SusannahSolomon',
-    icon: <GiAbstract016 />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Ricahrd Marten 1816-1884',
-    path: '/RichardMarten',
-    icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
-  }
+ 
 ];
