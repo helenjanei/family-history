@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import NavBar from './Components/NavBar';
+import Form from './Components/signUp/Form'
 import BAMPersonMaster from './Relatives/BAMarten';
 import TJMPersonMaster from './Relatives/TJMPersonMaster'
 import SMPersonMaster from './Relatives/SMcNaught'
@@ -31,6 +32,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route path='/' exact component={Home} />
+           <Route path='/Form' exact component={Form} />
            <Route path='/Wilkinson' exact component={Wilkinson} />
          <Route path='/Ingham' exact component={Ingham} />
          <Route path='/WilkinsonScrapbook' exact component={WilkinsonScrapbook} />
