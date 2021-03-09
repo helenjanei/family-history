@@ -81,7 +81,7 @@ const relatives1891 = ["My father Thomas, 43, a 'calico printer engineer'", 'My 
            
           
              relatives={relatives1891}       
-            />
+            />  <MarriageSection label='Marriage' text='I married ' src={familyTree} url={familyTree}/>
           </li>
      
    <li className='cards__item'> 

@@ -14,14 +14,14 @@ import birthPic3 from '../Assets/EBuchanan/St_Peter_Liverpool.jpg'
 function Pollard() {
   return (
  <> <div className="cards"> 
-    <h1> Marten  </h1>
+    <h1> Pollard  </h1>
   
     
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
      <li className='cards__item'> 
 
-        <LinkSection label='Beatrice Annie Marten 1881-1938' text="" src={mapServe} to='/BeatriceAnnieMarten' />
+        <LinkSection label='Thomas Pollard' text="" src={mapServe} to='/ThomasPollard' />
   
             
       </li>
