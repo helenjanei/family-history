@@ -1,7 +1,9 @@
 
 import '../App.css';
+import '../Components/ShortInfoSection.css'
 
 import LinkSection from '../Components/LinkSection'
+import ShortLinkSection from '../Components/ShortLinkSection'
 import mapServe from '../Assets/BAMarten/mapserv.png'
 
 import picture1871 from '../Assets/TJMarten/1871Picture.jpg'
@@ -42,14 +44,14 @@ function BAMFamilyTree() {
       </li>
       <li className='cards__item'> 
 
-        <LinkSection label="Marten" to='/JohnMarten'/>
-  <LinkSection label=""/>
-             <LinkSection label="Henry Solomon 1771-1845-" to='/HenrySolomon' />
-  <LinkSection label="Susannah Dudman 1767-1865" to='/SusannahDudman' />
-             <LinkSection label="John McNaught 1796-1850" to='/JohnMcNaughtSr'/>
-  <LinkSection label="Marion Mcjanet 1799-1851" to='/MarionMcjanet' />
-        <LinkSection label="Andrew Buchanan 1785-1859" to='/AndrewBuchanan' />
-  <LinkSection label="Selina Phillips 1792-1839" to='/SelinaPhilLips'/>
+        <ShortLinkSection label="Marten" to='/JohnMarten'/>
+  <ShortLinkSection label=""/>
+             <ShortLinkSection label="Henry Solomon 1771-1845-" to='/HenrySolomon' />
+  <ShortLinkSection label="Susannah Dudman 1767-1865" to='/SusannahDudman' />
+             <ShortLinkSection label="John McNaught 1796-1850" to='/JohnMcNaughtSr'/>
+  <ShortLinkSection label="Marion Mcjanet 1799-1851" to='/MarionMcjanet' />
+        <ShortLinkSection label="Andrew Buchanan 1785-1859" to='/AndrewBuchanan' />
+  <ShortLinkSection label="Selina Phillips 1792-1839" to='/SelinaPhilLips'/>
       </li>
  </div>
     </div>
