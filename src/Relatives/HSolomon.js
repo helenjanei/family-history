@@ -6,6 +6,7 @@ import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import InfoSection from '../Components/InfoSection'
 import DeathSection from '../Components/DeathSection'
+import ShortInfoSection from '../Components/shortInfoSection'
 import Button from '../Components/Button'
 import birthPic from '../Assets/HSolomon/birthPic.jpg'
 import birthPic2 from '../Assets/HSolomon/birthPic2.jpg'
@@ -17,6 +18,12 @@ import taxRecord1814 from '../Assets/HSolomon/1814taxRecord.png'
 import census1841 from '../Assets/HSolomon/1841census.png'
 import censusMap1841 from '../Assets/HSolomon/1841censusMap.png'
 import deathRecord from '../Assets/HSolomon/deathRecord.png'
+import truro from '../Assets/HSolomon/Truro.jpeg'
+import truroEast from '../Assets/HSolomon/Truro East View.jpeg'
+import truroMarket from '../Assets/HSolomon/Truro_Cornwall.jpeg'
+import truroView from '../Assets/HSolomon/truroView.jpeg'
+import truroMap from '../Assets/HSolomon/cornwall-hogg-2740.jpg'
+import art from '../Assets/HSolomon/art.jpeg'
 
 
 function HSPersonMaster() {
@@ -47,8 +54,8 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
             src2={birthPic2}
            
             text4="My father was James Solomon, 40, and my mother was Mary nee Crossman, 34."
-          text5="I was my parent's 14th child of 17. "
-          text6="I have a twin brother, William, who shares his name with two of our older brothers who died before they were over a year old."
+          text5="I was my parent's 7th child of 9. "
+          text6="I have a twin brother, William, who shares his name with one of our older brothers who died before they were over a year old."
             label2='Birth'
             />
           </li>
@@ -92,35 +99,35 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
 
 <li className='cards__item'> 
 
-<InfoSection label='Father' text="James Solomon 1731-1809" text2="Born and died in Truro, Cornwall" text3="Had 17 children with his wife." text4=""/>
-<InfoSection label='Mother' text="Mary Crossman 1736-1814" text2="Born and died in Truro, Cornwall" text3="Gave birth to 17 children over 28 years, including three sets of twins." text4="Lost at least three children in infancy, but reused the names." text5="Died aged 78"/>
+<InfoSection label='James Solomon 1731-1809' text="James Solomon 1731-1809" text="Born and died in Truro, Cornwall." text3="Had 9 children with his wife." text4="Lived to age 78." src={truro} url='https://www.cornwallheritage.com/news-blogs/ertach-kernow-blogs/ertach-kernow-how-truro-came-to-be-the-capital-city-of-cornwall-1/'/>
+<InfoSection label="Mary Crossman 1736-1814" text="Born and died in Truro, Cornwall." text2="Gave birth to 9 children over 15 years, including one set of twins." text3="Lost three children in infancy, but reused the names for younger siblings." text4="Died aged 78." src={truroEast}/>
 
  </li>
  <li className='cards__item'> 
 
-<InfoSection label='Father' text="Richard Solomon 1689-1743" text2="Born and died in Truro, Cornwall" text3="Had 10 children with his wife." />
-<InfoSection label='Mother' text="Joanna Speciot 1689-1770" text2="Born and died in Truro, Cornwall" text3="Had 10 children over twenty years" text5="Died aged 53"/>
+<InfoSection label="Richard Solomon 1689-1743" text="Born and died in Truro, Cornwall" text2="Had 10 children with his wife." text3="Lived to age 59." src={truroMarket} />
+<InfoSection label="Joanna Speciot 1689-1770" text2="Born and died in Truro, Cornwall." text3="Gave birth to 10 children over twenty years." text5="Died aged 53." src={truroView}/>
 
 
 
-<InfoSection label='Father' text="Henry Crossman 1691-1768" text2="Born and died in Truro, Cornwall" text3="Had 9 children with his wife." text4=""/>
-<InfoSection label='Mother' text="Margery Roberts 1695-1771" text2="Born and died in Truro, Cornwall" text3="Gave birth to 9 children over 16 years" text4="Died aged 76."/>
+<InfoSection label="Henry Crossman 1691-1768" text="Born and died in Truro, Cornwall." text2="Had 9 children with his wife." text3="Lived to age 77." src={truroMap} url='https://www.antique-maps-online.co.uk/cornwall-walpole-hogg-2740.html'/>
+<InfoSection label="Margery Roberts 1695-1771" text2="Born and died in Truro, Cornwall." text3="Gave birth to 9 children over 16 years." text4="Died aged 76." src={art} url='https://artcollection.culture.gov.uk/artwork/11667/'/>
  </li>
 
  <li className='cards__item'> 
 
-<InfoSection label='Father' text="Richard Solomon 1659-?" text2="Born in St Columb Minor near Newquay, Cornwall." />
-<InfoSection label='Mother' text="Mary ? 1667 - ?" text2="Born in St Columb Minor near Newquay, Cornwall." />
+<ShortInfoSection label="Richard Solomon 1659-?" text2="Born in St Columb Minor near Newquay, Cornwall." />
+<ShortInfoSection label="Mary ? 1667 - ?" text2="Born in St Columb Minor near Newquay, Cornwall." />
 
-<InfoSection label='Father' text="Joseph Speciot 1658-1705" text2="Born and died in Truro, Cornwall" />
-<InfoSection label='Mother' text="Jane Hawke 1662-1715" text2="Born and died in Truro, Cornwall" />
+<ShortInfoSection label="Joseph Speciot 1658-1705" text2="Born and died in Truro, Cornwall" />
+<ShortInfoSection label="Jane Hawke 1662-1715" text2="Born and died in Truro, Cornwall" />
 
 
-<InfoSection label='Father' text="Henry Crossman 1657-1709" text2="Born and died in Truro, Cornwall" text3="Married twice, remarried after death of first wife" />
-<InfoSection label='Mother' text="Elizabeth Penalunar 1661-1693" text2="Born and died in Truro, Cornwall" text3="Died aged 32, two days after giving birth to her son John."/>
+<ShortInfoSection label="Henry Crossman 1657-1709" text2="Born and died in Truro, Cornwall" text3="Married twice, remarried after death of first wife" />
+<ShortInfoSection label="Elizabeth Penalunar 1661-1693" text2="Born and died in Truro, Cornwall" text3="Died aged 32, two days after giving birth to her son John."/>
 
-<InfoSection />
-<InfoSection />
+<ShortInfoSection />
+<ShortInfoSection />
  </li>
 
 
