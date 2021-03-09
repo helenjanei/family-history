@@ -7,6 +7,7 @@ import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
 import LifeSummarySection from '../Components/LifeSummarySection'
 import LinkSection from '../Components/LinkSection'
+
 import familyTree from '../Assets/BAMarten/BAM-family-tree.jpg'
 import birthMap from '../Assets/BAMarten/BAM-Birth-map.jpg'
 import birthMap1862 from '../Assets/BAMarten/BAM-Birth-Map1862.png'
@@ -31,12 +32,12 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
 
   return (
   <div className="cards"> 
-  <div className="title"> 
+ 
     <h1> Beatrice Annie Wilkinson </h1>
     <h2> (nee Marten) </h2>
     <h4> 1882-1938 </h4> 
   
-  </div>
+  
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
@@ -52,7 +53,7 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
           text3='I lived with my father Thomas, who was 35 and an Insurance Agent and my mother Selina who was 20. '
           src={birthMap1862}
           label='Birth'
-          
+             label2='Birth'
           url2="https://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961" 
           text4="My half-sister Kate, was age 6 also lived with us, but not my sister Gertrude who would be aged 5, but she is back with us in the next census"
           text5="Lastly, we had a servant named Margaret Howe living with us, who was aged 18."

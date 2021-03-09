@@ -109,7 +109,7 @@ url="https://en.wikipedia.org/wiki/Clan_Buchanan#:~:text=Clan%20Buchanan%20(Scot
  
 
 
-  <Button className='btns'/>
+
     </div>
     </div>
     

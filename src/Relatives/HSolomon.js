@@ -119,12 +119,12 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
 <ShortInfoSection label="Richard Solomon 1659-?" text2="Born in St Columb Minor near Newquay, Cornwall." />
 <ShortInfoSection label="Mary ? 1667 - ?" text2="Born in St Columb Minor near Newquay, Cornwall." />
 
-<ShortInfoSection label="Joseph Speciot 1658-1705" text2="Born and died in Truro, Cornwall" />
-<ShortInfoSection label="Jane Hawke 1662-1715" text2="Born and died in Truro, Cornwall" />
+<ShortInfoSection label="Joseph Speciot 1658-1705" text2="Born and died in Truro, Cornwall." />
+<ShortInfoSection label="Jane Hawke 1662-1715" text2="Born and died in Truro, Cornwall." />
 
 
-<ShortInfoSection label="Henry Crossman 1657-1709" text2="Born and died in Truro, Cornwall" text3="Married twice, remarried after death of first wife" />
-<ShortInfoSection label="Elizabeth Penalunar 1661-1693" text2="Born and died in Truro, Cornwall" text3="Died aged 32, two days after giving birth to her son John."/>
+<ShortInfoSection label="Henry Crossman 1657-1709" text2="Born and died in Truro, Cornwall." text3="Married twice; remarried after the death of first wife." />
+<ShortInfoSection label="Elizabeth Penalunar 1661-1693" text2="Born and died in Truro, Cornwall." text3="Died aged 32, two days after giving birth to her son John."/>
 
 <ShortInfoSection />
 <ShortInfoSection />
@@ -132,7 +132,7 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
 
 
 
-  <Button classname='btns'/>
+
     </div>
     </div>
     
