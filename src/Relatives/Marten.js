@@ -17,6 +17,7 @@ import birthPic3 from '../Assets/EBuchanan/St_Peter_Liverpool.jpg'
 function BAMFamilyTree() {
   return (
  <> <div className="cards"> 
+ 
     <h1> Marten  </h1>
   
     
