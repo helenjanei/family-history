@@ -21,7 +21,7 @@ function Navbar() {
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
           <div className="navbar-header"> 
-          <h1> Nominal Whisking</h1>
+    
           </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
