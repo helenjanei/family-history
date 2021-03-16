@@ -4,6 +4,7 @@ import '../Components/ShortInfoSection.css'
 
 import LinkSection from '../Components/LinkSection'
 import ShortLinkSection from '../Components/ShortLinkSection'
+import SingleColumnLinkSection from '../Components/SingleColumnLinkSection'
 import mapServe from '../Assets/BAMarten/mapserv.png'
 
 import picture1871 from '../Assets/TJMarten/1871Picture.jpg'
@@ -23,7 +24,7 @@ function BAMFamilyTree() {
         <div className="cards_wrapper"> 
      <li className='cards__item'> 
 
-        <LinkSection label='Beatrice Annie Marten 1881-1938' text="" src={mapServe} to='/BeatriceAnnieMarten' />
+        <SingleColumnLinkSection label='Beatrice Annie Marten 1881-1938' text="" src={mapServe} to='/BeatriceAnnieMarten' />
   
             
       </li>
@@ -55,7 +56,7 @@ function BAMFamilyTree() {
       </li> 
       <li className='cards__item'> 
 
-        <LinkSection label='Resources' text="" src={mapServe} to='/martenresources' />
+        <SingleColumnLinkSection label='Resources' text="" src={mapServe} to='/martenresources' />
   
             
       </li>
