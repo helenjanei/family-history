@@ -10,11 +10,12 @@
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
+  color: #EFEBD8;
 }
 
 .navbar-header {
    
-    color: #f5f5f5;
+    color: #EFEBD8;
    padding-left: 30%;
    padding-top: 10px;
    padding-bottom: 10px;
@@ -42,14 +43,18 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 16px;
+  
   list-style: none;
   height: 60px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding-left: 2%;
 }
 
 .nav-text a {
   text-decoration: none;
-  color: #f5f5f5;
+  color: #EFEBD8;
   font-size: 18px;
   width: 95%;
   height: 100%;

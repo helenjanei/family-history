@@ -31,12 +31,13 @@ const relatives1901 = ["My father Thomas, 56 and now lists 'agent for the Gresha
 const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the district council,", 'I am 29', 'Our son Donald Graham, 2, who is your great-grandfather', 'Our youngest son George, aged 1']
 
   return (
-  <div className="cards"> 
- 
+ <>   <div className="title"> 
     <h1> Beatrice Annie Wilkinson </h1>
     <h2> (nee Marten) </h2>
     <h4> 1882-1938 </h4> 
+ </div>
   
+    <div className="cards"> 
   
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
@@ -154,12 +155,12 @@ to='/SelinaMcNaught'
 label="Selina McNaught 1861-1947" />
 </li>
 
-  <Button classname='btns'/>
+ 
     </div>
     </div>
     
     </div>
-
+</>
   );
 }
 

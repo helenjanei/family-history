@@ -20,6 +20,7 @@ function Navbar() {
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
+          <h3 className='nav-text'>site currently under construction</h3>
           <div className="navbar-header"> 
     
           </div>
