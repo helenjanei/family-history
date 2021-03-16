@@ -22,6 +22,7 @@ import EBPersonMaster from './Relatives/EBuchanan'
 import ABPersonMaster from './Relatives/ABuchanan'
 import SPPersonMaster from './Relatives/SPhillips'
 import Marten from './Relatives/Marten'
+import MartenResources from './Relatives/martenResources'
 import Wilkinson from './Relatives/Wilkinson'
 import Ingham from './Relatives/Ingham'
 import TPPersonMaster from './Relatives/TPollard'
@@ -45,6 +46,7 @@ function App() {
          
          
          <Route path='/Marten' exact component={Marten} />
+         <Route path='/Martenresources' exact component={MartenResources} />
           <Route path='/BeatriceAnnieMarten' component={BAMPersonMaster} />
           <Route path='/ThomasJohnMarten' component={TJMPersonMaster} />
            <Route path='/SelinaMcNaught' component={SMPersonMaster} />

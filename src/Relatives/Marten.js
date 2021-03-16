@@ -52,6 +52,12 @@ function BAMFamilyTree() {
   <ShortLinkSection label="Marion Mcjanet 1799-1851" to='/MarionMcjanet' />
         <ShortLinkSection label="Andrew Buchanan 1785-1859" to='/AndrewBuchanan' />
   <ShortLinkSection label="Selina Phillips 1792-1839" to='/SelinaPhilLips'/>
+      </li> 
+      <li className='cards__item'> 
+
+        <LinkSection label='Resources' text="" src={mapServe} to='/martenresources' />
+  
+            
       </li>
  </div>
     </div>
