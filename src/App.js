@@ -21,9 +21,14 @@ import MMcJPersonMaster from './Relatives/MMcJannet'
 import EBPersonMaster from './Relatives/EBuchanan'
 import ABPersonMaster from './Relatives/ABuchanan'
 import SPPersonMaster from './Relatives/SPhillips'
+import SCPersonMaster from './Relatives/SCox'
+
 import Marten from './Relatives/Marten'
 import MartenResources from './Relatives/martenResources'
 import Wilkinson from './Relatives/Wilkinson'
+
+
+
 import Ingham from './Relatives/Ingham'
 import TPPersonMaster from './Relatives/TPollard'
 import Pollard from './Relatives/Pollard'
@@ -61,6 +66,10 @@ function App() {
          <Route path='/JohnMarten' component={JMPersonMaster} />
           <Route path='/HenrySolomon' component={HSPersonMaster} /> 
         <Route path='/SusannahDudman' component={SDPersonMaster} />
+
+<Route path='/SarahCox' component={SCPersonMaster} />
+
+
 <Route path='/Pollard' exact component={Pollard} />
           <Route path='/ThomasPollard' component={TPPersonMaster} />
 

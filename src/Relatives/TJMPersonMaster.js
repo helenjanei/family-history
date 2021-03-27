@@ -11,13 +11,15 @@ import LinkSection from '../Components/LinkSection'
 import Button from '../Components/Button'
 
 import familyTree from '../Assets/TJMarten/familyTree.png'
-import birthMap from '../Assets/TJMarten/birthmap.png'
+
+import birthHouse from '../Assets/TJMarten/birthHouse.png'
 import birthCertificate from '../Assets/TJMarten/COL688468_2020-1-THOMAS_JOHN_MARTEN.pdf'
 import birthCert from '../Assets/TJMarten/birthCirt.png'
 import census1851 from '../Assets/TJMarten/1851Census.png'
 import censusMap1851 from '../Assets/TJMarten/1851censusMap.png'
 import censusHouse1861 from '../Assets/TJMarten/1861CensusHouse.png'
 import census1861 from '../Assets/TJMarten/1861Census1.png'
+import census18612 from '../Assets/TJMarten/1861Census2.png'
 import census1871 from '../Assets/TJMarten/1871Census.png'
 import picture1871 from '../Assets/TJMarten/1871Picture.jpg'
 import marriage1873 from '../Assets/TJMarten/1873MarriageChurch.jpg'
@@ -42,17 +44,20 @@ import birthPic from '../Assets/RMarten/birthPic.jpg'
 import birthPic2 from '../Assets/SSolomon/birthPic2.jpg'
 
 function TJMPersonMaster() {
-const relatives1851 = ['My father Richard, 35, a shoe maker', 'My mother Susannah, 35, a dressmaker', 'My older brother Alfred, 8, scholar', 'I am listed as age 6 and a Scholar', 'My younger brother Walter, 4', 'My younger sister Mary, 2.']
-const relatives1861 = ["My father Richard, 45, 'trunk-maker'", "My mother Susannah, 45, 'dress maker'", "My brother Walter, 14", "Mary, my sister, 12, scholar", "My brother Bernard, 8 months", "My father's sister, Elizabeth Easton, 53, dressmaker", "My cousin Charles Easton, 16, hair dresser", "My cousin George Easton, 14", "My grandma, Ann Marten, widower, 63", "My aunt Mary Marten, 25, 'milliner dress maker(?)'" ]
-const relatives1871 = ["Rachel Rouse, 46, 'householder'", "Emma Peacock, 25, Rachel's daughter", "Myself", "James Valentine, lodger, 21, 'professional artist', born in Edinburgh", "William Waskett, 31, lodger, 'lithograph maker?'"]
-const relatives1881 = ["I am 35 and listed as an 'insurance agent'", "My wife Selina is now 20", "My first daughter, Kate, 6", "My second daughter Gertrude would be aged 5 but isn't listed as living with us.", "A servant named Margaret Howe, 18"]
-const relatives1891 = ['I am 45, an insurance agent', 'My wife Selina, listed as 28', 'My two older daughters - Gertrude 16, and Mary 15', 'My daughter Beatrice, (your great-great-grandmother),9 and a Scholar', 'My son Frederick, 5, and also listed as a scholar', 'We no longer have a live in maid']
-const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assurance society' as his occupation", 'My wife Selina, 39', 'My older daughter Kate, 24', "Beatrice (your great-great-grandmother), 19, 'shorthand and type writer'", "My son Frederick, 16, and an 'assistant to ghast collector'", 'My youngest son Charles, 9' ]
+const relatives1851 = ['my father Richard, 35, a shoe maker', 'my mother Susannah, 35, a dressmaker', 'my older brother Alfred, 8, scholar', 'I am listed as age 6 and a Scholar', 'my younger brother Walter, 4', 'my younger sister Mary, 2']
+const relatives1861 = ["my father Richard, 45, 'trunk-maker'", "my mother Susannah, 45, 'dress maker'", "my brother Walter, 14", "Mary, my sister, 12, scholar", "my brother Bernard, 8 months", "my father's sister, Elizabeth Easton, 53, dressmaker", "my cousin Charles Easton, 16, hair dresser", "my cousin George Easton, 14", "my grandma, Ann Marten, widower, 63", "my aunt Mary Marten, 25, 'milliner dress maker(?)'" ]
+const relatives1871 = ["Rachel Rouse, 46, 'householder'", "Emma Peacock, 25, Rachel's daughter", "myself", "James Valentine, lodger, 21, 'professional artist', born in Edinburgh", "William Waskett, 31, lodger, 'lithograph maker?'"]
+const relatives1881 = ["I am 35 and listed as an 'insurance agent'", "my wife Selina is now 20", "my first daughter, Kate, 6", "my second daughter Gertrude would be aged 5 but isn't listed as living with us.", "a servant named Margaret Howe, 18"]
+const relatives1891 = ['I am 45, an insurance agent', 'my wife Selina, listed as 28', 'my two older daughters by my first marriage - Gertrude 16', 'Mary 15', 'my daughter Beatrice, (your great-great-grandmother), 9 and a Scholar', 'my son Frederick, 5, and also listed as a scholar', ]
+const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assurance society'", 'my wife Selina, 39', 'my older daughter Kate, 24', "Beatrice (your great-great-grandmother), 19, 'shorthand and type writer'", "my son Frederick, 16, and an 'assistant to ghast collector'", 'my youngest son Charles, 9' ]
 
   return (
-  <div className="cards"> 
+  <>
+  <div className="title"> 
     <h1> Thomas John Marten </h1>
     <h4> 1844-1907 </h4> 
+  </div>
+  <div className="cards"> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
@@ -61,11 +66,12 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
 
 
             <BirthSection url="https://www.google.com/maps/place/14+Burlington+St,+Kemptown,+Brighton/@50.8190072,-0.1240274,17z/data=!4m13!1m7!3m6!1s0x487585bb654c6aff:0x34210cc84b274609!2s14+Burlington+St,+Kemptown,+Brighton!3b1!8m2!3d50.8189713!4d-0.1239013!3m4!1s0x487585bb654c6aff:0x34210cc84b274609!8m2!3d50.8189713!4d-0.123901birthMao" text="I was born on the 25th December 1844, at 14 Burlington Street, Brighton." 
-            src={birthMap}
+            src={birthHouse}
             label='Birth'
           
             url2={birthCertificate}
-            text4="My father was Richard Marten, cordwainer (shoemaker), and my mother was Susannah nee Solomon."
+            text4="My father was Richard Marten 28, cordwainer (shoemaker), and my mother was Susannah (nee Solomon), who was 33 and a dressmaker."
+            text5="I was the second born of my parents' five children."
           
             label2='Birth record'
             src2={birthCert}
@@ -77,13 +83,14 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
             <CensusSection 
             label='1851 Census'
             text='In 1851 I was aged 6 and we had moved house, to 122 London Road, Brighton.'
+            text2='The address is located close to the station, perhaps my parents wanted a more central location to sell their goods from?'text3='Sadly the house no longer exists.'
             url='https://www.google.com/maps/place/122+London+Rd,+Brighton/@50.8287478,-0.1399042,15z/data=!4m5!3m4!1s0x4875859ddd6cc525:0x2ff1198bd3d532e0!8m2!3d50.830489!4d-0.13602'
             src={censusMap1851}
 
             src2={census1851}
             label2='Who did I live with?'
             url2={census1851}
-            text4='I lived with'
+        
              relatives={relatives1851}       
             />
           </li>
@@ -91,16 +98,16 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
           <li className='cards__item'> 
            <CensusSection 
            label='1861 Census'
-            text="In 1861 I was aged 16. I am not on the same census as my parents and siblings, and haven't been found on a census yet."
+            text="In 1861 I was aged 16, but I am not on the same census as my parents and siblings, and I haven't been found on a census yet."
             text2="My family are living at 41 Sidney Street,  Brighton."
            text3="My older brother Alfred is living in Lambeth, London, with our cousin Albert Box, who is a 'merchant'. Alfred is listed as a short hand writer."
             url='https://www.google.co.uk/maps/place/41+Sydney+St,+Brighton+BN1+4EP/@50.8271728,-0.1399909,17z/data=!3m1!4b1!4m5!3m4!1s0x487585757ee0b967:0xbab742b44bd37610!8m2!3d50.8271728!4d-0.1378022?hl=en-GB&authuser=0'
            src={censusHouse1861}
 
-           label2='What about the rest of my family?'
-           url2={census1861}
+           label2='41 Sidney Street'
+           url2={census18612}
            src2={census1861}
-           text4='Living in my family home were:'
+          
            relatives={relatives1861}
            />
           </li>
@@ -234,7 +241,7 @@ text2="It's likely he emigrated and there is possibly an obituary for him in Ame
     </div>
     
     </div>
-
+</>
   );
 }
 

@@ -30,9 +30,12 @@ const relatives1841 = ["Myself, 55, 'baker'", "Son David, 20, 'baker something'"
 const relatives1851 = ["I am  65, 'baker master'", "My daughter Elizabeth, 26", "Son-in-law John McNaught, 28, 'joiner", "Helen Maxwell, 25, servant", "Thomas Oneal, 14, servant", "Samuel Mar, indentured(?) or servant(?), 19, Baker" ]
 
   return (
-  <div className="cards"> 
+  <>   <div className="title">
+  
     <h1>Andrew Buchanan </h1>
      <h4> 1786-1859 </h4> 
+     </div>
+  <div className="cards"> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
@@ -114,7 +117,7 @@ url="https://en.wikipedia.org/wiki/Clan_Buchanan#:~:text=Clan%20Buchanan%20(Scot
     </div>
     
     </div>
-
+</>
   );
 }
 

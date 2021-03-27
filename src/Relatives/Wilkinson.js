@@ -17,7 +17,7 @@ function Wilkinson() {
         <div className="cards_wrapper"> 
  <li className='cards__item'> 
 
-<InfoSection label='Donald '   />
+<InfoSection label='Donald Graham'   />
 <InfoSection label='Elsie Iris'/>
 
 </li>

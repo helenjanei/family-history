@@ -5,7 +5,7 @@ import BirthSection from '../Components/BirthSection'
 import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
-import LifeSummarySection from '../Components/LifeSummarySection'
+import LinkSection from '../Components/LinkSection'
 import InfoSection from '../Components/InfoSection'
 import Button from '../Components/Button'
 import familyTree from '../Assets/RMarten/FamilyTree.png'
@@ -68,7 +68,7 @@ const relatives1881 = ["Emily Atkinson, 43, boarding house keeper", "Emily Eliza
    <MarriageSection  url='https://maps.nls.uk/view/102347737' label='Marriage' src={marriage1873} //change when wedding cirt for SS comes in
              text="On the 5th November 1841, at the age of 25 I married Susannah Solomon, 30, in Brighton, Sussex."
         /> 
-          <BirthSection url="https://www.google.com/maps/place/14+Burlington+St,+Kemptown,+Brighton/@50.8190072,-0.1240274,17z/data=!4m13!1m7!3m6!1s0x487585bb654c6aff:0x34210cc84b274609!2s14+Burlington+St,+Kemptown,+Brighton!3b1!8m2!3d50.8189713!4d-0.1239013!3m4!1s0x487585bb654c6aff:0x34210cc84b274609!8m2!3d50.8189713!4d-0.123901birthMao" text="Between 1843 and 1850 my husband and I had our first four children, Alfred Richard, Thomas John (your great great great grandfather), Walter Solomon and Mary Maria." 
+          <BirthSection url="https://www.google.com/maps/place/14+Burlington+St,+Kemptown,+Brighton/@50.8190072,-0.1240274,17z/data=!4m13!1m7!3m6!1s0x487585bb654c6aff:0x34210cc84b274609!2s14+Burlington+St,+Kemptown,+Brighton!3b1!8m2!3d50.8189713!4d-0.1239013!3m4!1s0x487585bb654c6aff:0x34210cc84b274609!8m2!3d50.8189713!4d-0.123901birthMao" text="Between 1843 and 1850 my wife and I had four children; Alfred Richard, Thomas John (your great great great grandfather), Walter Solomon and Mary Maria." 
             src={weddingMap}
             label='Children'
             
@@ -91,7 +91,7 @@ const relatives1881 = ["Emily Atkinson, 43, boarding house keeper", "Emily Eliza
             src2={census1851}
             label2='Who did I live with?'
             url2={census1851}
-            text4='I lived with'
+           
              relatives={relatives1851}       
             />
           </li>
@@ -142,10 +142,21 @@ const relatives1881 = ["Emily Atkinson, 43, boarding house keeper", "Emily Eliza
  <DeathSection  url='https://en.wikipedia.org/wiki/Portmanteau_(luggage)' label='Death' src={deathRichard} text='I died in April 1884, at the age of 68.' />
 </li>
 
+<li className='cards__item'> 
+
+<LinkSection 
+to='/JohnMarten'
+
+label="John Marten 1779-1856" />
+
+<LinkSection 
+
+to='/SarahCox'
+label="Sarah Cox 1779-1865" />
+</li>
 
 
 
-  <Button classname='btns'/>
     </div>
     </div>
     

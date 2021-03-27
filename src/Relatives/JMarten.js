@@ -2,35 +2,24 @@ import React from 'react';
 import '../App.css'
 import IntroSection from '../Components/IntroSection'
 import BirthSection from '../Components/BirthSection'
-import CensusSection from '../Components/CensusSection'
 import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
-import LifeSummarySection from '../Components/LifeSummarySection'
 import InfoSection from '../Components/InfoSection'
-import Button from '../Components/Button'
+import CensusSection from '../Components/CensusSection'
+import censusMap1851 from '../Assets/TJMarten/1851censusMap.png'
 import familyTree from '../Assets/JMarten/familyTree.png'
 import birthPic from '../Assets/JMarten/birthPic.jpg'
 import birthPic2 from '../Assets/JMarten/birthPic2.jpg'
-import LinkSection from '../Components/LinkSection'
-
-
-
-
-import birthMap from '../Assets/RMarten/birthMap.png'
-import cityDirectory1839 from '../Assets/RMarten/1839directory.png'
-import birthCert from '../Assets/TJMarten/birthCirt.png'
-import census1851 from '../Assets/TJMarten/1851Census.png'
-import censusMap1851 from '../Assets/TJMarten/1851censusMap.png'
-import weddingMap from '../Assets/SSolomon/weddingMap.png'
-import censusPic1871 from '../Assets/SSolomon/1871pic.jpg'
-import censusHouse1861 from '../Assets/TJMarten/1861CensusHouse.png'
-import census1861 from '../Assets/TJMarten/1861Census1.png'
-import census1871 from '../Assets/TJMarten/1871Census.png'
-import marriage1873 from '../Assets/TJMarten/1873MarriageChurch.jpg'
-import census1881 from '../Assets/TJMarten/1881Census.png'
-import censusHouse1881 from '../Assets/SSolomon/1881censusHouse.png'
+import ShortInfoSection from '../Components/shortInfoSection'
+import weddingPic from '../Assets/JMarten/800px-All_Saints_Church,_Lindfield_(NHLE_Code_1025462).jpeg'
 import deathRichard from '../Assets/SSolomon/deathRichard.jpeg'
-
+import census1841 from '../Assets/JMarten/1841census.png'
+import truro from '../Assets/HSolomon/Truro.jpeg'
+import truroEast from '../Assets/HSolomon/Truro East View.jpeg'
+import truroMarket from '../Assets/HSolomon/Truro_Cornwall.jpeg'
+import truroView from '../Assets/HSolomon/truroView.jpeg'
+import truroMap from '../Assets/HSolomon/cornwall-hogg-2740.jpg'
+import art from '../Assets/HSolomon/art.jpeg'
 
 // Need to find proof as to who is Richard Marten's parents!
 
@@ -38,29 +27,34 @@ import deathRichard from '../Assets/SSolomon/deathRichard.jpeg'
 
 function JMPersonMaster() {
 
-const relatives1851 = ['Myself, head, 35, a shoe maker', 'My wife Susannah 35, a dressmaker', 'My oldest son Alfred, 8, scholar', 'Thomas John, 6, Scholar', 'My youngest son Walter, 4', 'My youngest child Mary, 2.']
+const relatives1841 = ['Myself, head, 62, Gardener', 'My wife Sarah 62', 'My daughters Eliza, 30, dress maker', 'Ann, 27']
 
 
 
   return (
-  <div className="cards"> 
+<>   <div className="title">
+
     <h1> John Marten </h1>
-    <h4> 1780-1849 </h4> 
+    <h4> 1779-1846 </h4> 
+</div>
+  <div className="cards"> 
+  
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
           <li className='cards__item'>
+
             <IntroSection label='Who am I?' text='My name is John and I am your great-great-great-great-great-grandfather' src={familyTree} url={familyTree}/>
 
 
-            <BirthSection url="https://www.google.com/maps/place/All+Saints+Centre/@50.8466553,-0.044286,11.92z/data=!4m5!3m4!1s0x47df6290c8e79b21:0x255f47bcc3a90b9d!8m2!3d50.8724212!4d0.0135704" text="I was born 1780, and baptised on the 13th August 1780 at All Saints church, Lewes, Sussex." 
+            <BirthSection url="" text="I was born 1779 in, Lindfield, Sussex." 
             src={birthPic}
             label='Birth'
           
      
             text4="My father was Thomas Marten, and my mother was Ann, nee Harland."
-            text5="I was the 6th of my parents 8 children. They had 5 boys and 3 girls between the years 1770 and 1783."
-          url2="https://en.wikipedia.org/wiki/Lewes"
+            text5="I was the second of my parents two children. I have a sister who is three years older than me."
+          url2="https://en.wikipedia.org/wiki/Lindfield,_West_Sussex"
             label2='Birth'
             src2={birthPic2}
             />
@@ -68,30 +62,88 @@ const relatives1851 = ['Myself, head, 35, a shoe maker', 'My wife Susannah 35, a
     
           <li className='cards__item'> 
   
-   <MarriageSection  url='' label='Marriage' src={marriage1873} //change when wedding cirt for SS comes in
-             text="On the 28th June 1800, at the age of 21 I married Sarah Cox, , in Brighton, Sussex."
+   <MarriageSection  url='' label='Marriage' src={weddingPic} //change when wedding cirt for SS comes in
+             text="On the 28th June 1800, at the age of 21 I married Sarah Cox, 21, in Lindfield, Sussex." text2='My wife and I had 10 children over the course of 17 years, all of whom survived into old age.'
         /> 
        
 
+
+        <CensusSection 
+            label='1841 Census'
+            text='In 1841 I was aged 62 and lived at ? street in Brighton.'
+            
+            src={censusMap1851}
+
+            src2={census1841}
+            label2='Who did I live with?'
+            url2={census1841}
+        
+             relatives={relatives1841}       
+            />
+
+
+            
+         
+
+ <DeathSection  label='Death'  text='I died in 1846, in Brighton, at the age of 67.' />
 </li>
 
-            <li className='cards__item'> 
-            
-          </li>
- 
 <li className='cards__item'> 
 
- <DeathSection  url='https://en.wikipedia.org/wiki/Portmanteau_(luggage)' label='Death' src={deathRichard} text='I died in April 1884, at the age of 68.' />
-</li>
+<InfoSection label='Thomas Marten 1740-1815 ' text="Born in East Grinstead, Sussex." text2="Married on 28 May 1769 in Horsted-Keynes, Sussex."text3="Had 2 children with his wife." text4="Lived to age 75." />
+
+
+<InfoSection label="Ann Harland 1744-1805" text="Born in Hurstpierpoint, Sussex." text3="Had 2 children."  text4="Died aged 61." />
+
+ </li>
+ <li className='cards__item'> 
+
+<InfoSection label="Henry Marten 1703-764" text="Born in Ditchling, Sussex." text2="Married in 1724 at the age of 21, in Pycombe, Sussex" text3="Had between 5 and 7 children with his wife" text4="Died at age 61." />
+
+<InfoSection label="Mary Payne birth? - 1728?" text3="Gave birth to between 5 and 7 children." />
 
 
 
-  <Button classname='btns'/>
+<InfoSection label="Richard Harland 1711-1766" text="Born and died in Hurstpierpoint, Sussex." text2="Married his first wife, Elizabeth Haslegrove in 1735, at the age of 24. They had one daughter before Elizabeth died in 1738, perhaps from childbirth." text3="Married Ann Juniper in 1738, they had 5 children together."  text4="Died aged 55."/>
+<InfoSection label="Ann Juniper 1711-?" text2="Born in Cuckfield, Sussex." text3="Gave birth to 5 children over." />
+ </li>
+
+ <li className='cards__item'> 
+
+<ShortInfoSection label="Thomas Marten" text="Born in Frogbarrow in Ditchling, Sussex." text2="Married in 1691 age 21, in Maresfield, Sussex." text3="Had aprox four children and he died age 50." />
+<ShortInfoSection label="Jane Frisbee" />
+
+<ShortInfoSection  />
+<ShortInfoSection  />
+
+
+<ShortInfoSection  />
+<ShortInfoSection />
+
+<ShortInfoSection label="Francis Juniper 1686-1755" text="Born and died in Cuckfield, Surry." text2="Had nine children with his wife." text3="Died aged 69"/>
+<ShortInfoSection label="Ann 1691-1760" text="Born and died in Cuckfield, Surry." text2="Married at age 19 and gave birth to nine children over 18 years." text3="Died aged 69"/>
+ </li>
+ 
+ 
+ 
+ 
+ 
+ <li className='cards__item'> 
+
+<InfoSection label="Micheal Marten 1637-1706" text="Born in Ardingly, Sussex and died in Ditchling, Sussex." text2="Married in Lewes, Sussex, in 1659 at age 22." text3="Had between 7 children with his wife" text4="Died at age 69." />
+
+<InfoSection label="Elizabeth Marchant 1639-1727" text="Born in Keymer Sussex, died in Warham, Sussex." text2="Gave birth to 7 children over 16 years." />
+
+
+
+<InfoSection label="Francis Juniper the third." />
+<InfoSection />
+ </li>
     </div>
     </div>
     
     </div>
-
+</>
   );
 }
 

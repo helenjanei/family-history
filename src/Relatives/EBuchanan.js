@@ -43,10 +43,12 @@ const relatives1881 = ["Richard Dobell, my son-in-law, 28, Butcher", "My daughte
 const relatives1891 = ["Elizabeth Wells, 70, dressmaker", "Mary Wells, sister, 66, plain sewer", "Myself, boarder, 66", "My son , apprentice Joiner", "My daughter Maggie, 16", "Charles Simmonds, boarder, 32, seaman", "Gordon Sprant, boarder, 17, seaman."]
 
   return (
-  <div className="cards"> 
+<>   <div className="title">
     <h1> Elizabeth McNaught </h1>
    <h2>nee Buchanan</h2>
     <h4> 1824-1896 </h4> 
+    </div>
+  <div className="cards"> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
@@ -199,12 +201,12 @@ src={birthPic2}
  />
 </li>
 
-  <Button classname='btns'/>
+  
     </div>
     </div>
     
     </div>
-
+</>
   );
 }
 

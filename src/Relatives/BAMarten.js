@@ -22,13 +22,13 @@ import deathRecord from '../Assets/BAMarten/deathRecord.png'
 import fredJob from '../Assets/BAMarten/fredJob.png'
 import charlesNavy from '../Assets/BAMarten/GeorgeNavy.png'
 
-import Button from '../Components/Button'
+
 import picture1871 from '../Assets/TJMarten/1871Picture.jpg'
 import pubGirl from '../Assets/SMcNaught/1871Pub.jpeg'
 function BAMPersonMaster() {
-const relatives1891 = ['My father Thomas, 45, an insurance agent', 'My mother Selina, listed as 28', 'My two older half sisters - Gertrude 16, and Mary 15', 'I am listed as age 9 and a Scholar', 'My younger brother Frederick, 5, and also listed as a scholar', 'We no longer have a live in maid']
-const relatives1901 = ["My father Thomas, 56 and now lists 'agent for the Gresham assurance society' as his occupation", 'My mother Selina, 39', 'My older half sister Kate, 24', "I am 19 and my occupation is 'shorthand and type writer'", "My brother Frederick, 16, and an 'assistant to ghast collector'", 'My youngest brother Charles, 9' ]
-const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the district council,", 'I am 29', 'Our son Donald Graham, 2, who is your great-grandfather', 'Our youngest son George, aged 1']
+const relatives1891 = ['my father Thomas, 45, an insurance agent', 'my mother Selina, listed as 28', 'my two older half sisters - Gertrude 16, and Mary 15', 'I am listed as age 9 and a Scholar', 'my younger brother Frederick, 5, and also listed as a scholar']
+const relatives1901 = ["my father Thomas, 56 an, 'agent for the Gresham assurance society'", 'my mother Selina, 39', 'my older half sister Kate, 24', "I am 19 and a 'shorthand and type writer'", "my brother Frederick, 16, 'assistant to ghast collector'", 'my youngest brother Charles, 9' ]
+const relatives1911 = ["my husband George, 34, who was a 'bookkeeper for the district council'", 'I am 29', 'our son Donald Graham, 2, who is your great-grandfather', 'our youngest son George, aged 1']
 
   return (
  <>   <div className="title"> 
@@ -43,21 +43,22 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
         <div className="cards_wrapper"> 
         
        <li className='cards__item'>
-          <IntroSection label='who am I?' text='My name is Beatrice and I am your great-great-grandmother' src={familyTree} url={familyTree}/>
+          <IntroSection label='who am I?' text='My name is Beatrice and I am your great-great-grandmother.' src={familyTree} url={familyTree}/>
 
 
           <BirthSection 
           url='https://maps.nls.uk/view/102340990'
           text="I was born at 6 Wellington Terrace, Tranmere, Birkenhead on 10 May 1881. 
           " 
-          text2= "My middle name Annie is the name of my father's late first wife, my half sisters' mother."
-          text3='I lived with my father Thomas, who was 35 and an Insurance Agent and my mother Selina who was 20. '
+          text2='I was the first child from the marriage of my father Thomas, (who was 35 and an Insurance Agent), and my mother Selina, (who was 20).'
+          text3= "My father had been married before; he was a widower with two young daughters when he married my mother." 
           src={birthMap1862}
           label='Birth'
-             label2='Birth'
+          label2='Birth'
           url2="https://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961://www.google.com/maps/place/6+Wellington+Terrace,+Birkenhead+CH41+2TB/@53.3847234,-3.0252681,15z/data=!4m5!3m4!1s0x487b2717627d99d3:0x461cfc3b97836b10!8m2!3d53.384748!4d-3.0262961" 
-          text4="My half-sister Kate, was age 6 also lived with us, but not my sister Gertrude who would be aged 5, but she is back with us in the next census"
-          text5="Lastly, we had a servant named Margaret Howe living with us, who was aged 18."
+          text4="My middle name Annie is the name of my father's late first wife, my half sisters' mother, Annie Maria Marten."
+          text5="My half sister Kate was age 6 when I was born, and Gertrude was 5."
+        
           src2={birthMap}
           />
           </li>
@@ -67,11 +68,12 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
           label='1891 Census'
           text='In 1891 I was aged 9 and we had moved house, over the River Mersey to 6 Ponsonby Street, Toxteth (since demolished, between Cawdor and Eversley Street on modern maps).'
           url='https://maps.nls.uk/view/101104295'
+          src={censusMap1891}
+          
           src2={census1891}
           label2='Who did I live with?'
-          url2='https://www.google.com/maps/place/Ponsonby+Street/@53.3938342,-2.955199,18z/data=!4m13!1m7!3m6!1s0x487b20fcceadfac9:0x6869ee89af0503d1!2sCawdor+St,+Liverpool!3b1!8m2!3d53.3935828!4d-2.9564909!3m4!1s0x0:0x443ca74ffdcde922!8m2!3d53.394255!4d-2.9549816'
-          src={censusMap1891}
-          text4='I lived with'
+          url2={census1891}
+         
           relatives={relatives1891}
           
           />
@@ -80,20 +82,20 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
     <li className='cards__item'> 
           <CensusSection 
           label='1901 Census'
-          text="In 1901 I was aged 19 and we had moved house again. This time to 79 Crosby Road South, in Seaforth, Liverpool. Doesn't our house look smart!"
+          text="In 1901 I was aged 19 and we had moved house again. This time to 79 Crosby Road South, in Seaforth, Liverpool."
           url='https://www.google.com/maps/place/Riverslie+Rest+Home,+79+Crosby+Rd+S,+Seaforth,+Liverpool+L21+1EW/@53.4672705,-3.0180227,17z/data=!4m5!3m4!1s0x487b246e2be151bd:0xd9b77a3afd87f0b0!8m2!3d53.4675867!4d-3.0174863'
           src={house1901}
           label2='Who did I live with?'
-          url2='https://www.google.com/maps/place/Ponsonby+Street/@53.3938342,-2.955199,18z/data=!4m13!1m7!3m6!1s0x487b20fcceadfac9:0x6869ee89af0503d1!2sCawdor+St,+Liverpool!3b1!8m2!3d53.3935828!4d-2.9564909!3m4!1s0x0:0x443ca74ffdcde922!8m2!3d53.394255!4d-2.9549816'
+          url2={census1901}
           src2={census1901}
-          text4='I lived with'
+        
           relatives={relatives1901}
           
           />
 
 
 
-    <MarriageSection  url='www.google.com' label='Marriage' src={marriageRecord} text='I got married during the summer of 1906, somewhere near my home.' />
+    <MarriageSection  url={marriageRecord} label='Marriage' src={marriageRecord} text='I got married during the summer of 1906, somewhere near my home.' text2='I was aged 25, and my husband George Wilkinson was 29 and book-keeper for the district council.' />
 
           </li>
               <li className='cards__item'>
@@ -105,28 +107,28 @@ const relatives1911 = ["My husband George, 34, who was a 'bookkeeper for the dis
                 url='https://www.google.com/maps/place/11+Ashdale+Rd,+Waterloo,+Liverpool+L22+9QX/@53.4785408,-3.0299741,17z/data=!3m1!4b1!4m5!3m4!1s0x487b2461119482bd:0x3272ca0641f5412c!8m2!3d53.4785408!4d-3.0277854'
                 src={house1911}
                 label2='Who did I live with?'
-                url2=''
+                url2={census1911}
                 src2={census1911}
-                text4='I lived with'
+              
                 relatives={relatives1911}
                 
                 />
 
   
-    <DeathSection  url='' label='Death' src={deathRecord} text='I lived to age 58, and died in 1938.'/>
+    <DeathSection  url={deathRecord} label='Death' src={deathRecord} text='I lived to age 58, and died in 1938.'/>
     </li>
 
 <li className='cards__item'> 
-    <LifeSummarySection  url='' label='What happened next?' src={deathRecord} text="My oldest sister Kate remained living with my mother until Kate's death in 1928. "
-    text2="My sister Gertrude married in 1898."
+    <LifeSummarySection  label='What happened next?' src={deathRecord} text="My oldest half-sister Kate remained living with my mother Selina until Kate's death in 1928."
+    text2="My sister Gertrude married George Easton, a bicycle salesman, in 1898. They had two children and remained living in Cheshire."
 
 />
 
 <LifeSummarySection 
 label='What happened next?'
-url=''
+
 src={fredJob}
-text='My brother Fred became an engineer, and his name appears on crew lists in the ports of Sydney and New York. '
+text='My brother Fred became an engineer, and his name appears on crew lists in the ports of Sydney and New York.'
 text2="He died in 1928 at home in West Derby."
 
 />
@@ -136,9 +138,9 @@ label='What happened next?'
 url={charlesNavy}
 src={charlesNavy}
 text="
-My brother Charles began as a shipping clerk, and at one point enroled in the merchant navy, but doesn't seem to have lasted long. He married and moved to Horseforth, Leeds, where he is living on the 1939 register."
-text2="In 1939 he is listed as a clerk for a soap manufacturer. He had two children, and our mother Selina was living with him and his family." 
-text3="He died in 1962 at the Wharfdale hospital in Otley."
+My brother Charles began his career as a shipping clerk." text2="Aged 16 he he enrolled in the merchant navy, but he only lasted 8 months before his indenture was cancelled." text3="He married and moved to Horseforth, Leeds, where he is living on the 1939 register."
+text4="He is listed as a clerk for a soap manufacturer. He and his wife Annie had two children, and our mother Selina was living with them in 1939." 
+text5="He died in 1962 at the Wharfdale hospital in Otley."
 />
 
 </li>

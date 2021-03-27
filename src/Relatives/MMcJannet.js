@@ -21,10 +21,13 @@ const relatives1851 = ["Myself, 55, Blacksmith", "My daughter Margaret, 25", "Ma
 
 
   return (
-  <div className="cards"> 
+ <>   <div className="title">
+ 
     <h1> Marion McJannet </h1>
    
     <h4> 1799-1851 </h4> 
+    </div>
+  <div className="cards"> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
@@ -60,12 +63,11 @@ const relatives1851 = ["Myself, 55, Blacksmith", "My daughter Margaret, 25", "Ma
            
 
 
-  <Button classname='btns'/>
     </div>
     </div>
     
     </div>
-
+</>
   );
 }
 

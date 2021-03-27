@@ -54,10 +54,14 @@ const relatives1911 = ['Myself, 39', "My husband's older daughter Kate, 34", "My
 const relatives1939 = ["Charles Marten, 47, 'Clerk soap manufacture'", "Annie, his wife, aged 47, 'unpaid domestic duties.'", "My two granddaughters, Rita - 10, and a younger sibling", "My occupation is also listed as, 'unpaid domestic duties'"]
 
   return (
-  <div className="cards"> 
+  <>
+     <div className="title">
+
     <h1> Selina Phillips Marten </h1>
     <h2>nee McNaught</h2>
     <h4> 1861-1947 </h4> 
+    </div>
+  <div className="cards"> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
@@ -249,12 +253,12 @@ const relatives1939 = ["Charles Marten, 47, 'Clerk soap manufacture'", "Annie, h
   <LinkSection label="Elizabeth Buchanan 1824-1896" to='/ElizabethBuchanan' src={birthPic3}/>
 </li>
 
-  <Button classname='btns'/>
+
     </div>
     </div>
     
     </div>
-
+</>
   );
 }
 

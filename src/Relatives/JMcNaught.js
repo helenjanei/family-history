@@ -34,10 +34,13 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
 
 
   return (
-  <div className="cards"> 
+ <>   <div className="title">
+
     <h1> John McNaught </h1>
    
     <h4> 1823-1871 </h4> 
+ </div>
+ <div className="cards"> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
@@ -129,12 +132,12 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
 </li>
 
 
-  <Button classname='btns'/>
+
     </div>
     </div>
     
     </div>
-
+</>
   );
 }
 

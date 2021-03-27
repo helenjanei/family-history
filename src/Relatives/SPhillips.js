@@ -15,14 +15,16 @@ import deathRecordSelina from '../Assets/ABuchanan/deathRecordSelina.png'
 
 
 function SPPersonMaster() {
-
-
-
   return (
-  <div className="cards"> 
+ <>   
+
+ <div className="title"> 
     <h1> Selina Buchanan </h1>
-    <h2> nee Phillips </h2>
+    <h2> (nee Phillips) </h2>
      <h4> 1792-1839 </h4> 
+  </div>
+  
+  <div className="cards"> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
@@ -56,14 +58,11 @@ url="" src={birthPic} text="I was born in 1792 in Liverpool." text2="Unfortunate
                  
 
         
- 
-
-
-  <Button className='btns'/>
     </div>
     </div>
     
     </div>
+ </>
 
   );
 }

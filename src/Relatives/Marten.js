@@ -49,9 +49,9 @@ function BAMFamilyTree() {
       </li>
       <li className='cards__item'> 
 
-        <ShortLinkSection label="Marten" to='/JohnMarten'/>
-  <ShortLinkSection label=""/>
-             <ShortLinkSection label="Henry Solomon 1771-1845-" to='/HenrySolomon' />
+        <ShortLinkSection label="John Marten 1779-1846" to='/JohnMarten'/>
+  <ShortLinkSection label="Sarah Cox 1779-1865" to='/SarahCox' />
+             <ShortLinkSection label="Henry Solomon 1771-1845" to='/HenrySolomon' />
   <ShortLinkSection label="Susannah Dudman 1767-1865" to='/SusannahDudman' />
              <ShortLinkSection label="John McNaught 1796-1850" to='/JohnMcNaughtSr'/>
   <ShortLinkSection label="Marion Mcjanet 1799-1851" to='/MarionMcjanet' />
