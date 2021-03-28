@@ -41,25 +41,28 @@ const relatives1891 = ['Sammuel Juniper, Head, 50, Ironmonger', "Jane, his wife,
 
 
   return (
-  <div className="cards"> 
+  <>   <div className="title">
+  
     <h1> Susannah Marten </h1>
     <h2> nee Solomon </h2>
     <h4> 1816-1892 </h4> 
+    </div>
+  <div className="cards"> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
           <li className='cards__item'>
-            <IntroSection label='Who am I?' text='My name is Susannah and I am your great-great-great-great-grandmother' src={familyTree} url={familyTree}/>
+            <IntroSection label='Who am I?' text='My name is Susannah and I am your great-great-great-great-grandmother.' src={familyTree} url={familyTree}/>
 
 
-            <BirthSection url="" text="I was born in 1811 in London." text2="I was baptised on the 26th January 1812 at St Clement Danes Church, on the Strand in central London." 
+            <BirthSection  text="I was born in 1811 in London." text2="I was baptised on the 26th January 1812 at St Clement Danes Church, on the Strand in central London." 
          
          src={birthPic}
             label='Birth'
-            url={baptism}
+            url="https://en.wikipedia.org/wiki/St_Clement_Danes"
             
             src2={birthPic2}
-            url2="https://en.wikipedia.org/wiki/St_Clement_Danes"
+            url2={baptism}
             text4="My father was Henry Solomon, 40, a taylor, and my mother was Susannah nee Dudman, 43."
           text5="I was my parent's 6th and final child."
             label2='Birth'
@@ -72,7 +75,7 @@ const relatives1891 = ['Sammuel Juniper, Head, 50, Ironmonger', "Jane, his wife,
              text="On the 5th November 1841, at the age of 30 I got married to Richard Marten, 25, in Brighton, Sussex."
         />
 
-           <BirthSection url="https://www.google.com/maps/place/14+Burlington+St,+Kemptown,+Brighton/@50.8190072,-0.1240274,17z/data=!4m13!1m7!3m6!1s0x487585bb654c6aff:0x34210cc84b274609!2s14+Burlington+St,+Kemptown,+Brighton!3b1!8m2!3d50.8189713!4d-0.1239013!3m4!1s0x487585bb654c6aff:0x34210cc84b274609!8m2!3d50.8189713!4d-0.123901birthMao" text="Between 1843 and 1850 my husband and I had our first four children, Alfred Richard, Thomas John (your great great great grandfather), Walter Solomon and Mary Maria." 
+           <BirthSection text="Between 1843 and 1850 my husband and I had our first four children, Alfred Richard, Thomas John (your great great great grandfather), Walter Solomon and Mary Maria." 
             src={weddingMap}
             label='Children'
             
@@ -95,7 +98,7 @@ const relatives1891 = ['Sammuel Juniper, Head, 50, Ironmonger', "Jane, his wife,
             src2={census1851}
             label2='Who did I live with?'
             url2={census1851}
-            text4='I lived with'
+            
              relatives={relatives1851}       
             />
           </li>
@@ -154,6 +157,7 @@ const relatives1891 = ['Sammuel Juniper, Head, 50, Ironmonger', "Jane, his wife,
 <CensusSection 
            label='1891 Census'
             text="In 1891 I was aged 80 and on the census I am listed as a visitor at 140/141 London Road, Brighton" 
+            text2="The family I am staying with have the last name Juniper, which was my husband's grandmother's maiden name. Perhaps they are distant family?"
            url="https://www.google.com/maps/place/36+Rose+Hill+Terrace,+Brighton+BN1+4JL/@50.8327125,-0.1359647,17z/data=!4m13!1m7!3m6!1s0x4875859d74db12bd:0xdf24bd53f66e495f!2s36+Rose+Hill+Terrace,+Brighton+BN1+4JL!3b1!8m2!3d50.832726!4d-0.135979!3m4!1s0x4875859d74db12bd:0xdf24bd53f66e495f!8m2!3d50.832726!4d-0.135979"
            src={censusHouse1891}
 
@@ -171,12 +175,12 @@ const relatives1891 = ['Sammuel Juniper, Head, 50, Ironmonger', "Jane, his wife,
   <LinkSection label="Susannah Dudman 1767-1865" to='/SusannahDudman' src={birthPic4} />
   </li>
 
-  <Button classname='btns'/>
+
     </div>
     </div>
     
     </div>
-
+</>
   );
 }
 

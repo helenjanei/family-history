@@ -10,6 +10,7 @@
   overflow: hidden;
   text-decoration: none;
   margin: 10px;
+ 
 }
 
 .short__cards__item__pic-wrap {
@@ -24,13 +25,22 @@
   content: attr(data-category);
   position: absolute;
   bottom: 0;
-  
+   
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #EFEBD8;
   background-color: #960018;
   box-sizing: border-box;
   border-radius: 8px;
 }
+
+  @media screen and (max-width: 620px) {
+    .short__cards__item__pic-wrap::after {
+    
+    font-size: 1rem;
+     }
+    
+  }
+  

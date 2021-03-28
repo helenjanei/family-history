@@ -51,6 +51,8 @@ function App() {
          
          
          <Route path='/Marten' exact component={Marten} />
+
+
          <Route path='/Martenresources' exact component={MartenResources} />
           <Route path='/BeatriceAnnieMarten' component={BAMPersonMaster} />
           <Route path='/ThomasJohnMarten' component={TJMPersonMaster} />

@@ -94,7 +94,7 @@ const relatives1891 = ["Elizabeth Wells, 70, dressmaker", "Mary Wells, sister, 6
 <li className='cards__item'> 
              <CensusSection 
             label='1851 Census'
-            text='I was age 26 and John and I are living with my family at 49 Shaws Alley, Toxteth, Liverpool. (.'
+            text='I was age 26 and John and I are living with my family at 49 Shaws Alley, Toxteth, Liverpool.'
             url="https://maps.nls.uk/geo/explore/side-by-side/#zoom=17&lat=53.39996&lon=-2.98588&layers=6&right=BingHyb"
            src={censusMap1851}
             src2={census1851}
@@ -187,7 +187,7 @@ const relatives1891 = ["Elizabeth Wells, 70, dressmaker", "Mary Wells, sister, 6
          
 
   <DeathSection  url='https://en.wikipedia.org/wiki/Toxteth_Park_Cemetery' label='Death' src={deathPic} text='I lived to age 72, and died on the 8th July 1896.' 
-  text2="I am buried in Toxteth Park Cemetary" 
+  text2="I am buried in Toxteth Park Cemetary." 
    />
             
             </li>

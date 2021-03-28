@@ -39,8 +39,7 @@ function CensusSection(props) {
               <h5>
               {props.text4}
               </h5>
-                <ol>{listRelatives}
-                </ol>              
+                <ol>{listRelatives}</ol>              
               </div>
               
           </div>

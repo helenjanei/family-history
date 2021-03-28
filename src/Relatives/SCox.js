@@ -10,22 +10,10 @@ import censusMap1851 from '../Assets/TJMarten/1851censusMap.png'
 import familyTree from '../Assets/JMarten/familyTree.png'
 import birthPic from '../Assets/JMarten/birthPic.jpg'
 import birthPic2 from '../Assets/JMarten/birthPic2.jpg'
-import ShortInfoSection from '../Components/shortInfoSection'
 import weddingPic from '../Assets/JMarten/800px-All_Saints_Church,_Lindfield_(NHLE_Code_1025462).jpeg'
-import deathRichard from '../Assets/SSolomon/deathRichard.jpeg'
 import census1841 from '../Assets/JMarten/1841census.png'
 import census1851 from '../Assets/SCox/1851census.png'
 import census1861 from '../Assets/SCox/1861census.png'
-import truro from '../Assets/HSolomon/Truro.jpeg'
-import truroEast from '../Assets/HSolomon/Truro East View.jpeg'
-import truroMarket from '../Assets/HSolomon/Truro_Cornwall.jpeg'
-import truroView from '../Assets/HSolomon/truroView.jpeg'
-import truroMap from '../Assets/HSolomon/cornwall-hogg-2740.jpg'
-import art from '../Assets/HSolomon/art.jpeg'
-
-// Need to find proof as to who is Richard Marten's parents!
-
-
 
 function SCPersonMaster() {
 

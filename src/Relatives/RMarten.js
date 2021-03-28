@@ -7,7 +7,7 @@ import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
 import LinkSection from '../Components/LinkSection'
 import InfoSection from '../Components/InfoSection'
-import Button from '../Components/Button'
+
 import familyTree from '../Assets/RMarten/FamilyTree.png'
 import birthMap from '../Assets/RMarten/birthMap.png'
 import birthPic from '../Assets/RMarten/birthPic.jpg'
@@ -24,8 +24,8 @@ import marriage1873 from '../Assets/TJMarten/1873MarriageChurch.jpg'
 import census1881 from '../Assets/TJMarten/1881Census.png'
 import censusHouse1881 from '../Assets/SSolomon/1881censusHouse.png'
 import deathRichard from '../Assets/SSolomon/deathRichard.jpeg'
-
-
+import weddingPic from '../Assets/JMarten/800px-All_Saints_Church,_Lindfield_(NHLE_Code_1025462).jpeg'
+import sarahPic from '../Assets/SCox/The_Thatched_Cottage,_Lindfield.jpg'
 
 
 
@@ -40,14 +40,17 @@ const relatives1881 = ["Emily Atkinson, 43, boarding house keeper", "Emily Eliza
 
 
   return (
-  <div className="cards"> 
+  <>   <div className="title">
+  
     <h1> Richard Marten </h1>
     <h4> 1816-1884 </h4> 
+    </div>
+  <div className="cards"> 
       <div className="cards_container"> 
         <div className="cards_wrapper"> 
         
           <li className='cards__item'>
-            <IntroSection label='Who am I?' text='My name is Richard and I am your great-great-great-great-grandfather' src={familyTree} url={familyTree}/>
+            <IntroSection label='Who am I?' text='My name is Richard and I am your great-great-great-great-grandfather.' src={familyTree} url={familyTree}/>
 
 
             <BirthSection url="https://www.google.com/maps/place/Storrington/@50.8857045,-0.427102,11.75z/data=!4m5!3m4!1s0x4875bbf093f9ee77:0x80499a4363664bd6!8m2!3d50.918329!4d-0.454313" text="I was born 1816, in Storrington, Sussex." 
@@ -64,11 +67,11 @@ const relatives1881 = ["Emily Atkinson, 43, boarding house keeper", "Emily Eliza
           </li>
     
           <li className='cards__item'> 
-  <InfoSection url={cityDirectory1839} label="Pigot's Directory of Sussex" src={cityDirectory1839} text="In 1839 and 1840 I appear in Pigot's Directory of Sussex." text2="I am listed under 'Boot and Shoe makers' with the address 4 Somerset Place, Brighton (no longer on modern maps)"/>
+  <InfoSection url={cityDirectory1839} label="Pigot's Directory of Sussex" src={cityDirectory1839} text="In 1839 and 1840 I appear in Pigot's Directory of Sussex." text2="I am listed under 'Boot and Shoe makers' with the address 4 Somerset Place, Brighton (no longer on modern maps)."/>
    <MarriageSection  url='https://maps.nls.uk/view/102347737' label='Marriage' src={marriage1873} //change when wedding cirt for SS comes in
              text="On the 5th November 1841, at the age of 25 I married Susannah Solomon, 30, in Brighton, Sussex."
         /> 
-          <BirthSection url="https://www.google.com/maps/place/14+Burlington+St,+Kemptown,+Brighton/@50.8190072,-0.1240274,17z/data=!4m13!1m7!3m6!1s0x487585bb654c6aff:0x34210cc84b274609!2s14+Burlington+St,+Kemptown,+Brighton!3b1!8m2!3d50.8189713!4d-0.1239013!3m4!1s0x487585bb654c6aff:0x34210cc84b274609!8m2!3d50.8189713!4d-0.123901birthMao" text="Between 1843 and 1850 my wife and I had four children; Alfred Richard, Thomas John (your great great great grandfather), Walter Solomon and Mary Maria." 
+          <BirthSection text="Between 1843 and 1850 my wife and I had four children; Alfred Richard, Thomas John (your great great great grandfather), Walter Solomon and Mary Maria." 
             src={weddingMap}
             label='Children'
             
@@ -146,13 +149,14 @@ const relatives1881 = ["Emily Atkinson, 43, boarding house keeper", "Emily Eliza
 
 <LinkSection 
 to='/JohnMarten'
+src={weddingPic}
 
 label="John Marten 1779-1856" />
 
 <LinkSection 
 
 to='/SarahCox'
-label="Sarah Cox 1779-1865" />
+label="Sarah Cox 1779-1865" src={sarahPic} />
 </li>
 
 
@@ -161,7 +165,7 @@ label="Sarah Cox 1779-1865" />
     </div>
     
     </div>
-
+</>
   );
 }
 

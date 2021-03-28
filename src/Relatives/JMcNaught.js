@@ -7,10 +7,9 @@ import MarriageSection from '../Components/MarriageSection'
 import DeathSection from '../Components/DeathSection'
 import LinkSection from '../Components/LinkSection'
 import InfoSection from '../Components/InfoSection'
-import Button from '../Components/Button'
 import birthPic2 from '../Assets/JMcNaught/birthPic2.png'
-import familyTree from '../Assets/JMcNaught/birthMap.png'
-import birthMap2 from '../Assets/JMcNaught/birthMap2.png'
+import familyTree from '../Assets/JMcNaught/familyTree.png'
+import birthMap2 from '../Assets/JMcNaught/birthMap.png'
 import marriageRecord from '../Assets/JMcNaught/marriageRecord.png'
 import censusMap1851 from '../Assets/JMcNaught/1851censusMap.png'
 import census1851 from '../Assets/JMcNaught/1851census.png'
@@ -45,7 +44,7 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
         <div className="cards_wrapper"> 
         
           <li className='cards__item'>
-            <IntroSection label='Who am I?' text='My name is John and I am your great-great-great-great-grandfather' src={familyTree} url={familyTree}/>
+            <IntroSection label='Who am I?' text='My name is John and I am your great-great-great-great-grandfather.' src={familyTree} url={familyTree}/>
 
 
             <BirthSection url="http://www.kirkyards.co.uk/rerrick-parish/" text="I was born on the 14th February 1823 near Rerrick, Kirkcudbright, Scotland." text2="I was christened at Rerrick Church (since demolished)." 
@@ -104,7 +103,7 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
           <li className='cards__item'> 
            <CensusSection 
            label='1871 Census'
-            text="In 1871 I was aged 10, and we had moved to 67 Walton Lane, Kirkdale, Liverpool." text2="Sadly the property is no longer there, probably as a result of bombing in the second world war."
+            text="In 1871 I was aged 39, and we had moved to 67 Walton Lane, Kirkdale, Liverpool." text2="Sadly the property is no longer there, probably as a result of bombing in the second world war."
             
           
             url='https://www.google.com/maps/place/67+Walton+Ln,+Liverpool+L4+4HU/@53.4335337,-2.9688786,17z/data=!4m5!3m4!1s0x487b21669525c4fb:0x54e1ac73ab103b03!8m2!3d53.4334251!4d-2.9690288'

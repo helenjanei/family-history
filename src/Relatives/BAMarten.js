@@ -120,7 +120,7 @@ const relatives1911 = ["my husband George, 34, who was a 'bookkeeper for the dis
 
 <li className='cards__item'> 
     <LifeSummarySection  label='What happened next?' src={deathRecord} text="My oldest half-sister Kate remained living with my mother Selina until Kate's death in 1928."
-    text2="My sister Gertrude married George Easton, a bicycle salesman, in 1898. They had two children and remained living in Cheshire."
+    text2="My sister Gertrude married George Eastwood, a bicycle salesman, in 1898. They had two children and remained living in Cheshire."
 
 />
 

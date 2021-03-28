@@ -47,8 +47,8 @@ function TJMPersonMaster() {
 const relatives1851 = ['my father Richard, 35, a shoe maker', 'my mother Susannah, 35, a dressmaker', 'my older brother Alfred, 8, scholar', 'I am listed as age 6 and a Scholar', 'my younger brother Walter, 4', 'my younger sister Mary, 2']
 const relatives1861 = ["my father Richard, 45, 'trunk-maker'", "my mother Susannah, 45, 'dress maker'", "my brother Walter, 14", "Mary, my sister, 12, scholar", "my brother Bernard, 8 months", "my father's sister, Elizabeth Easton, 53, dressmaker", "my cousin Charles Easton, 16, hair dresser", "my cousin George Easton, 14", "my grandma, Ann Marten, widower, 63", "my aunt Mary Marten, 25, 'milliner dress maker(?)'" ]
 const relatives1871 = ["Rachel Rouse, 46, 'householder'", "Emma Peacock, 25, Rachel's daughter", "myself", "James Valentine, lodger, 21, 'professional artist', born in Edinburgh", "William Waskett, 31, lodger, 'lithograph maker?'"]
-const relatives1881 = ["I am 35 and listed as an 'insurance agent'", "my wife Selina is now 20", "my first daughter, Kate, 6", "my second daughter Gertrude would be aged 5 but isn't listed as living with us.", "a servant named Margaret Howe, 18"]
-const relatives1891 = ['I am 45, an insurance agent', 'my wife Selina, listed as 28', 'my two older daughters by my first marriage - Gertrude 16', 'Mary 15', 'my daughter Beatrice, (your great-great-grandmother), 9 and a Scholar', 'my son Frederick, 5, and also listed as a scholar', ]
+const relatives1881 = ["I am 35 and listed as an 'insurance agent'", "my wife Selina is now 20", "my first daughter, Kate, 6 - (my second daughter Gertrude - 5 isn't listed as living with us and is so far un-found on a census)", "a servant named Margaret Howe, 18 (possibly to help my heavily pregnant young wife with her new family)"]
+const relatives1891 = ['I am 45, an insurance agent', 'my wife Selina, listed as 28', 'my two older daughters by my first marriage - Gertrude 16', 'Kate 15', 'my daughter Beatrice, (your great-great-grandmother), 9 and a Scholar', 'my son Frederick, 5, and also listed as a scholar', ]
 const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assurance society'", 'my wife Selina, 39', 'my older daughter Kate, 24', "Beatrice (your great-great-grandmother), 19, 'shorthand and type writer'", "my son Frederick, 16, and an 'assistant to ghast collector'", 'my youngest son Charles, 9' ]
 
   return (
@@ -62,7 +62,7 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
         <div className="cards_wrapper"> 
         
           <li className='cards__item'>
-            <IntroSection label='Who am I?' text='My name is Thomas and I am your great-great-great-grandfather' src={familyTree} url={familyTree}/>
+            <IntroSection label='Who am I?' text='My name is Thomas and I am your great-great-great-grandfather.2' src={familyTree} url={familyTree}/>
 
 
             <BirthSection url="https://www.google.com/maps/place/14+Burlington+St,+Kemptown,+Brighton/@50.8190072,-0.1240274,17z/data=!4m13!1m7!3m6!1s0x487585bb654c6aff:0x34210cc84b274609!2s14+Burlington+St,+Kemptown,+Brighton!3b1!8m2!3d50.8189713!4d-0.1239013!3m4!1s0x487585bb654c6aff:0x34210cc84b274609!8m2!3d50.8189713!4d-0.123901birthMao" text="I was born on the 25th December 1844, at 14 Burlington Street, Brighton." 
@@ -115,15 +115,15 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
           <li className='cards__item'>
             <CensusSection 
                 label='1871 Census'
-                text="In 1871 I was aged 26, and lived at 5 Henson (or Hewson) Street, Newington."  
-                text2="The street seems to be long gone, but it was near St Georges Road, Newington, Lambeth."
+                text="In 1871 I was aged 26, and lived at 5 Henson (or Hewson) Street, Newington, London."  
+                text2="The street seems to be gone, but it was near St Georges Road, Newington, Lambeth."
                 text3="I am a lodger in a boarding house, and am listed as a 'warehouseman.'"
                 url="https://maps.nls.uk/view/103313045"
                 src={picture1871}
                 label2='Who did I live with?'
                 url2={census1871}
                 src2={census1871}
-                text4='I lived with'
+             
                 relatives={relatives1871}
                                 />
           </li>
@@ -132,25 +132,25 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
             <MarriageSection  url='https://www.google.co.uk/maps/place/Steyning/@50.8878973,-0.3456301,14z/data=!3m1!4b1!4m5!3m4!1s0x487591457ce92619:0xa63c863476cdf7e5!8m2!3d50.887403!4d-0.326676?hl=en-GB&authuser=0' label='Marriage' src={marriage1873} text="I got married to my first wife, Annie Maria Richmond in the autumn of 1873, in Steyning, Sussex, probably at St Andrew and St Cuthman's Church."
             text2="In 1871 Annie is listed as a parlour maid living in at 51 Burt(?) Gate, Knightsbridge home of a merchant, his family, and ten servants." />
 
-            <MarriageSection url="" text="Annie and I had two daughters together."
+            <MarriageSection  text="Annie and I had two daughters together."
             text2="Kate Mary Susannah Marten in July 1875, registered in Kennington."
             text3="Gertrude Medwin Marten in January 1877, registered in Poplar." 
             src={victorianPoplar}
             label='Children'
             />
             
-            <DeathSection  url='' label='Death of first wife' src={deathRecord} text='Annie died in the summer of 1878, in Poplar.'/>
+            <DeathSection  url={deathRecord} label='Death of first wife' src={deathRecord} text='Annie died in the summer of 1878, in Poplar.'/>
           </li>
 
           <li className='cards__item'> 
-            <MarriageSection  url={marriage1880} label='Marriage' src={marriageChurch1880} text="I married to my second wife, Selina McNaught on the 17th July 1880."
-            text2="We married at Saint Brides Church, Liverpool."
-            text3="Selina was aged 19 so had to have her mother's consent to marry."
+            <MarriageSection  url={marriage1880} label='Marriage' src={marriageChurch1880} text="I married to my second wife, Selina McNaught on the 17th July 1880 at Saint Brides Church, Liverpool."
+            text2="Why I had moved to Liverpool remains a mystery."
+            text3="My new wife Selina was aged 19 so had to have her mother's consent to marry."
              />
 
              <MarriageSection  url='https://www.google.com/maps/place/129+Duke+St,+Liverpool+L1+4JR/@53.4012155,-2.9818034,17z/data=!3m1!4b1!4m5!3m4!1s0x487b2126942507b5:0x36b0c8ee67c09261!8m2!3d53.4012155!4d-2.9796147?hl=en-GB' label='Marriage' src={marriageHome1880} 
-             text="We are both listed as living at 129 Duke street, Liverpool." 
-             text2="Interestingly, I list my father's rank or profession as 'Gentleman'." />
+             text="On the marriage record we are both listed as living at 129 Duke street, Liverpool." text2="This was a boarding house run by Selina's brother-in-law, so likely we met at the boarding house when I moved to Liverpool. " 
+             text3="Interestingly, I list my father's rank or profession as 'Gentleman'." />
           </li>
 
           <li className='cards__item'> 
@@ -165,7 +165,7 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
              label2='Who did I live with?'
               url2={census1881}
              src2={census1881}
-             text4='I lived with'
+          
              relatives={relatives1881}
                             />
           </li>
@@ -182,7 +182,7 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
               label2='Who did I live with?'
               url2='https://www.google.com/maps/place/Ponsonby+Street/@53.3938342,-2.955199,18z/data=!4m13!1m7!3m6!1s0x487b20fcceadfac9:0x6869ee89af0503d1!2sCawdor+St,+Liverpool!3b1!8m2!3d53.3935828!4d-2.9564909!3m4!1s0x0:0x443ca74ffdcde922!8m2!3d53.394255!4d-2.9549816'
               src={censusMap1891}
-              text4='I lived with'
+         
               relatives={relatives1891}
                 />
             </li>
@@ -191,13 +191,13 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
                 
                 <CensusSection 
                label='1901 Census'
-               text="In 1901 we had moved house again. This time to 79 Crosby Road South, in Seaforth, Liverpool. Doesn't our house look smart!"
+               text="In 1901 we had moved house again. This time to 79 Crosby Road South, in Seaforth, Liverpool."
                url='https://www.google.com/maps/place/Riverslie+Rest+Home,+79+Crosby+Rd+S,+Seaforth,+Liverpool+L21+1EW/@53.4672705,-3.0180227,17z/data=!4m5!3m4!1s0x487b246e2be151bd:0xd9b77a3afd87f0b0!8m2!3d53.4675867!4d-3.0174863'
               src={house1901}
                label2='Who did I live with?'
-               url2='https://www.google.com/maps/place/Ponsonby+Street/@53.3938342,-2.955199,18z/data=!4m13!1m7!3m6!1s0x487b20fcceadfac9:0x6869ee89af0503d1!2sCawdor+St,+Liverpool!3b1!8m2!3d53.3935828!4d-2.9564909!3m4!1s0x0:0x443ca74ffdcde922!8m2!3d53.394255!4d-2.9549816'
+               url2={census1901}
                src2={census1901}
-               text4='I lived with'
+           
                relatives={relatives1901}          
                  />
 
@@ -212,7 +212,7 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
 
             <LifeSummarySection  url={walterCensus1871} label='What happened next?' src={walterCensus1871} text="My brother Walter Solomon married in Surrey, and then moved abroad."
             text2="One of his children's birth's is registered in Ontario, Canada, and another in Dresden, Germany." text3="His son Frank Walter was a surveyor and estate agent and was also granted the Freedom Of the City of London in 1919."
-            text4="Walter seems to have died in 1890 in Yokohamma, Japan"/>
+            text4="Walter seems to have died in 1890 in Yokohamma, Japan."/>
 <LifeSummarySection  label='What happened next?'
 url='https://en.wikipedia.org/wiki/Hatmaking'
 src={milliner}
@@ -236,8 +236,7 @@ text2="It's likely he emigrated and there is possibly an obituary for him in Ame
   <LinkSection label="Susannah Solomon 1811-1892" to="/SusannahSolomon"src={birthPic2}/>
 </li>
 
-  <Button classname='btns'/>
-    </div>
+  <Button classname='btns'/>    </div>
     </div>
     
     </div>
