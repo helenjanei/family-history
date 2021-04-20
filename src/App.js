@@ -7,31 +7,33 @@ import NavBar from './Components/NavBar';
 import Form from './Components/signUp/Form'
 
 
-import BAMPersonMaster from './Relatives/BAMarten';
-import TJMPersonMaster from './Relatives/TJMPersonMaster'
-import SMPersonMaster from './Relatives/SMcNaught'
-import SSPersonMaster from './Relatives/SSolomon'
-import RMPersonMaster from './Relatives/RMarten'
-import JMPersonMaster from './Relatives/JMarten'
-import HSPersonMaster from './Relatives/HSolomon'
-import SDPersonMaster from './Relatives/SDudman'
-import JMcPersonMaster from './Relatives/JMcNaught'
-import JMcSrPersonMaster from './Relatives/JMcNaughtSr'
-import MMcJPersonMaster from './Relatives/MMcJannet'
-import EBPersonMaster from './Relatives/EBuchanan'
-import ABPersonMaster from './Relatives/ABuchanan'
-import SPPersonMaster from './Relatives/SPhillips'
-import SCPersonMaster from './Relatives/SCox'
+import BAMPersonMaster from './Relatives/Marten/BAMarten';
+import TJMPersonMaster from './Relatives/Marten/TJMPersonMaster'
+import SMPersonMaster from './Relatives/Marten/SMcNaught'
+import SSPersonMaster from './Relatives/Marten/SSolomon'
+import RMPersonMaster from './Relatives/Marten/RMarten'
+import JMPersonMaster from './Relatives/Marten/JMarten'
+import HSPersonMaster from './Relatives/Marten/HSolomon'
+import SDPersonMaster from './Relatives/Marten/SDudman'
+import JMcPersonMaster from './Relatives/Marten/JMcNaught'
+import JMcSrPersonMaster from './Relatives/Marten/JMcNaughtSr'
+import MMcJPersonMaster from './Relatives/Marten/MMcJannet'
+import EBPersonMaster from './Relatives/Marten/EBuchanan'
+import ABPersonMaster from './Relatives/Marten/ABuchanan'
+import SPPersonMaster from './Relatives/Marten/SPhillips'
+import SCPersonMaster from './Relatives/Marten/SCox'
 
-import Marten from './Relatives/Marten'
-import MartenResources from './Relatives/martenResources'
+import Marten from './Relatives/Marten/Marten'
+import MartenResources from './Relatives/Marten/martenResources'
 import Wilkinson from './Relatives/Wilkinson'
 
 
 
 import Ingham from './Relatives/Ingham'
-import TPPersonMaster from './Relatives/TPollard'
-import Pollard from './Relatives/Pollard'
+import TPPersonMaster from './Relatives/Pollard/TPollard'
+import MKPersonMaster from './Relatives/Pollard/MKnowles'
+import TPsPersonMaster from './Relatives/Pollard/TPollardSr'
+import Pollard from './Relatives/Pollard/Pollard'
 import WilkinsonMemories from './Relatives/WilkinsonMemories'
 import WilkinsonRecipes from './Relatives/WilkinsonRecipes'
 
@@ -74,7 +76,9 @@ function App() {
 
 <Route path='/Pollard' exact component={Pollard} />
           <Route path='/ThomasPollard' component={TPPersonMaster} />
-
+ <Route path='/ThomasPollardSr' component={TPsPersonMaster} />
+  <Route path='/MaryKnowles' component={MKPersonMaster} />
+  
         </Switch>
        
       </Router>

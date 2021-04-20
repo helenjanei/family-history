@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import InfoSection from '../Components/InfoSection'
 import LinkSection from '../Components/LinkSection'
-
+import birthPic from '../Assets/TPollard/birthPic.jpg'
 
 function Ingham() {
   return (
@@ -23,7 +23,7 @@ function Ingham() {
     <li className='cards__item'> 
   <LinkSection label="Ingham" to='/InghamLine'/>
   <LinkSection label="Mathews" to='/Mathews'/>
-  <LinkSection label="Pollard" to='/Pollard'/>
+  <LinkSection label="Pollard" to='/Pollard' src={birthPic}/>
   <LinkSection label="Eckersley" to='/Eckersley'/>
   </li>
     </div>
