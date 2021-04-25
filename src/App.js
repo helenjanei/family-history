@@ -26,14 +26,16 @@ import SCPersonMaster from './Relatives/Marten/SCox'
 import Marten from './Relatives/Marten/Marten'
 import MartenResources from './Relatives/Marten/martenResources'
 import Wilkinson from './Relatives/Wilkinson'
-
-
-
 import Ingham from './Relatives/Ingham'
+
+
+import Pollard from './Relatives/Pollard/Pollard'
 import TPPersonMaster from './Relatives/Pollard/TPollard'
 import MKPersonMaster from './Relatives/Pollard/MKnowles'
 import TPsPersonMaster from './Relatives/Pollard/TPollardSr'
-import Pollard from './Relatives/Pollard/Pollard'
+import JPPersonMaster from './Relatives/Pollard/JPollard'
+
+
 import WilkinsonMemories from './Relatives/WilkinsonMemories'
 import WilkinsonRecipes from './Relatives/WilkinsonRecipes'
 
@@ -78,7 +80,7 @@ function App() {
           <Route path='/ThomasPollard' component={TPPersonMaster} />
  <Route path='/ThomasPollardSr' component={TPsPersonMaster} />
   <Route path='/MaryKnowles' component={MKPersonMaster} />
-  
+  <Route path='/JohnPollard' component={JPPersonMaster} />
         </Switch>
        
       </Router>
