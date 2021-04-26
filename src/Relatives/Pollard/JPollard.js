@@ -26,16 +26,6 @@ import census1871 from '../../Assets/JPollard/1871census.png'
 import JohnJr from '../../Assets/JPollard/JohnJrCensusMap1871.png'
 
 
-import weddingPic from '../../Assets/TPollardSr/weddingPic.png'
-import censusMap1881 from '../../Assets/TPollard/1881censusMap.png'
-import census1881 from '../../Assets/TPollard/1881census.png'
-import censusHouse1891 from '../../Assets/TPollard/1891censusHouse.png'
-import census1891 from '../../Assets/TPollard/1891census.png'
-import printHouse from '../../Assets/TPollard/printHouses.jpg'
-import census1901 from '../../Assets/TPollardSr/1901census.png'
-import census1911 from '../../Assets/TPollardSr/1911census.png'
-import townHall from '../../Assets/TPollardSr/Westhoughton_Town_Hall_front.jpg'
-
 
 function JPPersonMaster() {
 
