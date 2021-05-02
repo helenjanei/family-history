@@ -32,7 +32,7 @@ import westhoughton from '../../Assets/MKnowles/westHoughton.jpg'
 
 function TPsPersonMaster() {
 
-  const relatives1851 = ['My father Bury, 36, a block printer', "My mother Ann, 36, block printer's wife" , 'Dorothy, 11, servant(?) at a print works', 'Alice, 9, scholar', 'Ester, 7, scholar', "Myself, 5, scholar"]
+  const relatives1851 = ['My father Bury, 36, a block printer', "My mother Ann, 36, block printer's wife" , 'Dorothy, 11, teaser at a print works', 'Alice, 9, scholar', 'Ester, 7, scholar', "Myself, 5, scholar"]
 
  const relatives1861 = ['My father Bury, 46, a block printer', "My mother Anne, 46", 'Dorothy, 21, cotton weaver', "Alice, 19, cotton weaver", "Esther Ann, cotton weaver", "Myself, 15, cotton weaver", "Jane, 6, scholar"]
 

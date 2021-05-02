@@ -30,7 +30,7 @@ import greatHucklow from '../../Assets/JPollard/greatHucklow.png'
 import coffinRoute from '../../Assets/JPollard/coffinRoute.png'
 
 
-function JPPersonMaster() {
+function IWPersonMaster() {
 
   const relatives1841 = ['Myself, 40, mechanic', "wife Catherine, 35", "George 13, Apprentice", "Richard, 10, apprentice", "William, 10", "James, 5", "John, 4", "Thomas, 7 months", "Isabella, 5", "Mary Hartley, 40, servant(?)", "Roger Hartley, 10"]
 
@@ -163,7 +163,7 @@ function JPPersonMaster() {
           </li>
    <li className='cards__item'> 
 <LinkSection label="George Pollard 1776-1861" to='/GeorgePollard' />
-  <LinkSection label="Isabella Whitaker 1780-1857" to="/IsabellaWhitaker"/>
+  <LinkSection label="Bella Whitaker 1780-1857" to="/BellaWhitaker"/>
 </li>
 
  
@@ -176,4 +176,4 @@ function JPPersonMaster() {
 }
 
 
-export default JPPersonMaster; 
+export default IWPersonMaster; 

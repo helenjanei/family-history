@@ -158,9 +158,9 @@ background: white;
 
 .cards__item__text {
   color: #252e48;
-  font-size: 30px;
-  line-height: 36px;
-  padding-bottom: 9px;
+  font-size: 21px;
+  line-height: 26px;
+  padding-bottom: 6px;
   text-align: justify;
 }
 

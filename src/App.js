@@ -34,7 +34,9 @@ import TPPersonMaster from './Relatives/Pollard/TPollard'
 import MKPersonMaster from './Relatives/Pollard/MKnowles'
 import TPsPersonMaster from './Relatives/Pollard/TPollardSr'
 import JPPersonMaster from './Relatives/Pollard/JPollard'
-
+import CHPersonMaster from './Relatives/Pollard/CHartley'
+import GPPersonMaster from './Relatives/Pollard/GPollard'
+import IWPersonMaster from './Relatives/Pollard/IWhitaker'
 
 import WilkinsonMemories from './Relatives/WilkinsonMemories'
 import WilkinsonRecipes from './Relatives/WilkinsonRecipes'
@@ -81,6 +83,9 @@ function App() {
  <Route path='/ThomasPollardSr' component={TPsPersonMaster} />
   <Route path='/MaryKnowles' component={MKPersonMaster} />
   <Route path='/JohnPollard' component={JPPersonMaster} />
+  <Route path='/CatherineHartley' component={CHPersonMaster} />
+  <Route path='/GeorgePollard' component={GPPersonMaster} /> 
+   <Route path='/IsabellaWhitaker' component={IWPersonMaster} />
         </Switch>
        
       </Router>

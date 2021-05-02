@@ -9,7 +9,7 @@ function Ingham() {
     <>
     
     <div className="cards"> 
-    <h1> Stuart and Anthony  </h1>
+    <h1> Stuart and Antony  </h1>
   
     <h2> Ingham </h2>
       <div className="cards_container"> 

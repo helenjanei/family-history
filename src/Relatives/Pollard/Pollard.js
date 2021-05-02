@@ -3,13 +3,13 @@ import '../../App.css';
 import SingleColumnLinkSection from '../../Components/SingleColumnLinkSection'
 import LinkSection from '../../Components/LinkSection'
 import birthPic2 from '../../Assets/TPollardSr/birthPic.jpg'
- 
+ import ShortLinkSection from '../../Components/ShortLinkSection'
 
 import birthPic from '../../Assets/TPollard/birthPic.jpg'
 
 import weddingPic from '../../Assets/MKnowles/clitheroe.jpg'
-
-
+import JohnPollardCut from '../../Assets/JPollard/JPollard (cut).jpg'
+import CatherineHartleyCut from '../../Assets/CHartley/picOfCatherine (cut).jpg'
 
 function Pollard() {
   return (
@@ -34,22 +34,22 @@ function Pollard() {
 
 <li className='cards__item'> 
 
-        <LinkSection label="John Pollard 1800-1872" to='/JohnPollard' />
-  <LinkSection label="Catherine Hartley 1803-1877" to="/CatherineHartley"/>
+        <LinkSection label="John Pollard 1800-1872" to='/JohnPollard' src={JohnPollardCut}/>
+  <LinkSection label="Catherine Hartley 1803-1877" to="/CatherineHartley" src={CatherineHartleyCut}/>
              <LinkSection label="Bury Knowles 1815-1889" to='/BuryKnowles' />
   <LinkSection label="Ann Hallworth 1814-1879" to='/AnnHalworth' />
 
       </li>
       <li className='cards__item'> 
 
-        <LinkSection label="George Pollard 1776-1861" to='/George Pollard'/>
-  <LinkSection label="Bella Whitaker 1780-1857" to='/BellaWhitaker'/>
-             <LinkSection label="Richard Hartley 1754-1769" to='/RichardHartley' />
-  <LinkSection label="Millicent Yates 1769-1828" to='/Millicent Yates' />
-             <LinkSection label="Hugh Knowles 1791-1869" to='/HughKnowles'/>
-  <LinkSection label="Mary Bury 1790-1870" to='/MaryBury' />
-        <LinkSection label="John Hallworth 1781-1841" to='/JohnHallworth' />
-  <LinkSection label="Hester E Brade 1779-1849" to='/HesterBrade'/>
+        <ShortLinkSection label="George Pollard 1776-1861" to='/GeorgePollard' src={CatherineHartleyCut}/>
+  <ShortLinkSection label="Isabella Whitaker 1780-1857" to='/IsabellaWhitaker'/>
+             <ShortLinkSection label="Richard Hartley 1762" to='/RichardHartley' />
+  <ShortLinkSection label="Millicent Yates 1769-1828" to='/MillicentYates' />
+             <ShortLinkSection label="Hugh Knowles 1791-1869" to='/HughKnowles'/>
+  <ShortLinkSection label="Mary Bury 1790-1870" to='/MaryBury' />
+        <ShortLinkSection label="John Hallworth 1781-1841" to='/JohnHallworth' />
+  <ShortLinkSection label="Hester E Brade 1779-1849" to='/HesterBrade'/>
       </li>
  </div>
     </div>
