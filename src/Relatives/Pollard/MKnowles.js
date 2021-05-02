@@ -30,7 +30,7 @@ import townHall from '../../Assets/TPollardSr/Westhoughton_Town_Hall_front.jpg'
 import westhoughton from '../../Assets/MKnowles/westHoughton.jpg'
 
 
-function TPsPersonMaster() {
+function MKsPersonMaster() {
 
   const relatives1851 = ['My father Bury, 36, a block printer', "My mother Ann, 36, block printer's wife" , 'Dorothy, 11, teaser at a print works', 'Alice, 9, scholar', 'Ester, 7, scholar', "Myself, 5, scholar"]
 
@@ -203,4 +203,4 @@ url='https://en.wikipedia.org/wiki/Westhoughton'
 }
 
 
-export default TPsPersonMaster; 
+export default MKsPersonMaster; 
