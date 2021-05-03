@@ -44,7 +44,7 @@ function Pollard() {
       </li>
       <li className='cards__item'> 
 
-        <ShortLinkSection label="George Pollard 1776-1861" to='/GeorgePollard' src={CatherineHartleyCut}/>
+        <ShortLinkSection label="George Pollard 1776-1861" to='/GeorgePollard' />
   <ShortLinkSection label="Isabella Whitaker 1780-1857" to='/IsabellaWhitaker'/>
              <ShortLinkSection label="Richard Hartley 1762" to='/RichardHartley' />
   <ShortLinkSection label="Millicent Yates 1769-1828" to='/MillicentYates' />

@@ -28,7 +28,7 @@ import JohnJrProbate from '../../Assets/JPollard/JpollardJrProbate.png'
 import stockport from '../../Assets/JPollard/stockport.jpg'
 import greatHucklow from '../../Assets/JPollard/greatHucklow.png'
 import coffinRoute from '../../Assets/JPollard/coffinRoute.png'
-
+import pendle from '../../Assets/GPollard/1-pendle_sunset.jpeg'
 
 function JPPersonMaster() {
 
@@ -162,7 +162,7 @@ function JPPersonMaster() {
             <DeathSection label='Death' text='I died in 1874, at the age of 74.' text2="I died in Romisley, Cheshire, however I was buried in the church at Whalley on the 2nd September 1874."url={coffinRoute} src={coffinRoute}  />
           </li>
    <li className='cards__item'> 
-<LinkSection label="George Pollard 1776-1861" to='/GeorgePollard' />
+<LinkSection label="George Pollard 1776-1861" to='/GeorgePollard' src={pendle}/>
   <LinkSection label="Isabella Whitaker 1780-1857" to="/IsabellaWhitaker"/>
 </li>
 
