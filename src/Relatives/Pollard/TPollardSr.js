@@ -28,9 +28,9 @@ import printHouse from '../../Assets/TPollard/printHouses.jpg'
 import census1901 from '../../Assets/TPollardSr/1901census.png'
 import census1911 from '../../Assets/TPollardSr/1911census.png'
 import townHall from '../../Assets/TPollardSr/Westhoughton_Town_Hall_front.jpg'
+import JohnPollardCut from '../../Assets/JPollard/JPollard (cut).jpg'
+import CatherineHartleyCut from '../../Assets/CHartley/picOfCatherine (cut).jpg'
 
-import house1939 from '../../Assets/TPollard/1939house.png'
-import register1939 from '../../Assets/TPollard/1939register.png'
 
 function TPsPersonMaster() {
 
@@ -195,8 +195,8 @@ url='https://en.wikipedia.org/wiki/Westhoughton'
             <DeathSection label='Death' text='I died on the 17th March 1934, at the age of 86.' />
           </li>
    <li className='cards__item'> 
-<LinkSection label="John Pollard 1800-1872" to='/JohnPollard' />
-  <LinkSection label="Catherine Hartley 1803-1877" to="/CatherineHartley"/>
+<LinkSection label="John Pollard 1800-1872" to='/JohnPollard' src={JohnPollardCut} />
+  <LinkSection label="Catherine Hartley 1803-1877" to="/CatherineHartley" src={CatherineHartleyCut}/>
 </li>
 
  

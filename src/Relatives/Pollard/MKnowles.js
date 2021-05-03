@@ -28,7 +28,7 @@ import census1901 from '../../Assets/TPollardSr/1901census.png'
 import census1911 from '../../Assets/TPollardSr/1911census.png'
 import townHall from '../../Assets/TPollardSr/Westhoughton_Town_Hall_front.jpg'
 import westhoughton from '../../Assets/MKnowles/westHoughton.jpg'
-
+import oldClitheroe from '../../Assets/BKnowles/oldClitheroe.jpg'
 
 function MKsPersonMaster() {
 
@@ -189,7 +189,7 @@ url='https://en.wikipedia.org/wiki/Westhoughton'
            
           </li>
    <li className='cards__item'> 
-<LinkSection label="Bury Knowles 1815-1889" to='/BuryKnowles' />
+<LinkSection label="Bury Knowles 1815-1889" to='/BuryKnowles' src={oldClitheroe}/>
   <LinkSection label="Ann Hallworth 1814-1879" to="/AnnHallworth"/>
 </li>
 

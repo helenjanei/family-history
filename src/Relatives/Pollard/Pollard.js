@@ -10,6 +10,8 @@ import birthPic from '../../Assets/TPollard/birthPic.jpg'
 import weddingPic from '../../Assets/MKnowles/clitheroe.jpg'
 import JohnPollardCut from '../../Assets/JPollard/JPollard (cut).jpg'
 import CatherineHartleyCut from '../../Assets/CHartley/picOfCatherine (cut).jpg'
+import oldClitheroe from '../../Assets/BKnowles/oldClitheroe.jpg'
+
 
 function Pollard() {
   return (
@@ -36,7 +38,7 @@ function Pollard() {
 
         <LinkSection label="John Pollard 1800-1872" to='/JohnPollard' src={JohnPollardCut}/>
   <LinkSection label="Catherine Hartley 1803-1877" to="/CatherineHartley" src={CatherineHartleyCut}/>
-             <LinkSection label="Bury Knowles 1815-1889" to='/BuryKnowles' />
+             <LinkSection label="Bury Knowles 1815-1889" to='/BuryKnowles' src={oldClitheroe} />
   <LinkSection label="Ann Hallworth 1814-1879" to='/AnnHalworth' />
 
       </li>
