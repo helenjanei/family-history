@@ -42,7 +42,7 @@ const relatives1851 = ["I am  65, 'baker master'", "My daughter Elizabeth, 26", 
           <li className='cards__item'>
             <IntroSection label='Who am I?' text='My name is Andrew and I am your great-great-great-great-great-grandfather.' src={familyTree} url={familyTree}/>
 <InfoSection label="Birth"
-url="https://en.wikipedia.org/wiki/Clan_Buchanan#:~:text=Clan%20Buchanan%20(Scottish%20Gaelic%3A%20Na,by%20the%20Earl%20of%20Lennox." src={birthPic} text="I was born in 1786 in Scotland." text2="Unfortunately, there are a number of Andrew Buchanan's born around this period in Scotland, so currently my parents can't be exactly identified." text3="The most likely match is with the Andrew Buchanan born in April 1784, to James Buchanan and Isobel Thomson, Stirling, Scotland. " text4="This is based on the fact my wife and I named our first two children James and Isobella." text5="Clan Buchanan originates from the Highlands, however Buchanans were largely split on the two sides during the Jacobite uprisings of the early and mid 1700s."
+url="https://en.wikipedia.org/wiki/Clan_Buchanan#:~:text=Clan%20Buchanan%20(Scottish%20Gaelic%3A%20Na,by%20the%20Earl%20of%20Lennox." src={birthPic} text="I was born in 1786 in Scotland." text2="Unfortunately, there are a number of Andrew Buchanan's born around this period in Scotland, so currently my parents can't be exactly identified." text3="The most likely match is with the Andrew Buchanan born in April 1784, to James Buchanan and Isobel Thomson, Stirling, Scotland. " text4="This is based on the fact my wife and I named our first two children James and Isobella." 
 />
 
            

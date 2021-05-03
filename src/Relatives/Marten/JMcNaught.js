@@ -52,9 +52,9 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
             label='Birth'
           
             src2={birthPic2}
-            text4="I was the second child of my parents, John McNaught 27, and Marion McJanet 23."
-          text5="My parents had ten children, and seem to have lost some of them as babies."
-          text6="My family seem to move slightly north when I am a child to Balmaghie, Kirkcudbright, Scotland, as this is where some of my siblings are christened."
+            text3="I was the second child of my parents, John McNaught 27, and Marion McJanet 23."
+          text4="My parents had ten children, and seem to have lost some of them as babies."
+          text5="My family seem to move slightly north when I am a child to Balmaghie, Kirkcudbright, Scotland, as this is where some of my siblings are christened."
           url2="https://www.google.com/maps/place/Balmaghie,+Castle+Douglas+DG7+2PB/@54.8279989,-4.3226011,9z/data=!4m5!3m4!1s0x4862e9b0ee2f68fb:0xb0f83ec215089f8a!8m2!3d54.948599!4d-4.00438?hl=en-GB"
             label2='Birth'
            
@@ -67,7 +67,9 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
             text3="My occupation is listed as 'Joiner' and my address is Upper Stanhope Street, Toxteth Park."
             text4="My father's occupation is recorded as 'land steward'."
              />
-            
+             </li>
+    
+          <li className='cards__item'> 
             
              <CensusSection 
             label='1851 Census'
@@ -116,7 +118,9 @@ const relatives1871 = ["I am 39, 'publican', (perhaps we lived in a pub?)", "My 
            relatives={relatives1871}
            />
       
-
+ </li>
+    
+          <li className='cards__item'> 
   <DeathSection  url={deathRecord2} label='Death' src={deathRecord} text='I lived to age 48, and died in May 1st 1871.' 
   text2="My abode on the cemetery register is recorded as 67 Walton Lane, and my profession as a 'Joiner'." 
   text3="However, in probate my address is given as Tetlow street, Kirkdale, and I am recorded as a 'victualler'." 

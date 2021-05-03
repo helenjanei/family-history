@@ -86,6 +86,10 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
           
            relatives={relatives1841}
            />
+           </li>
+    
+
+          <li className='cards__item'>
  <InfoSection label="1851/61 Census'" text='Although I am still alive, I have not yet been found on the 1851 or 1861 census.' src={takingTheCensus} url='https://fineartamerica.com/featured/taking-the-census-mary-evans-picture-library.html'/>
  <DeathSection  url={deathImage} label='Death' src={deathImage} text='There are the deaths of two different Susannah Solomon registered in London after 1841. One is for 1867 and the other 1865, which would have made me 98 or 100 respectively.' text2="More likely I have died prior to the 1851 census and a record cannot be found."
  />

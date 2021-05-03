@@ -213,7 +213,9 @@ const relatives1939 = ["Charles Marten, 47, 'Clerk soap manufacture'", "Annie, h
                relatives={relatives1939}          
                  />
 
-          
+            </li>
+    
+          <li className='cards__item'> 
 
   <DeathSection  url={deathRecord} label='Death' src={deathRecord} text='I lived to age 86, and died on the 3rd July 1947.' text2="In probate my address is given as 8 Wesley Street, Waterloo." text3="However my place of death is recorded as 'Holm Hill, Village Road, West Kirby, Cheshire.'" text4="My effects came to £1810 1s and probate was given to 'George Wilkinson, retired local government officer'." text5="George Wilkinson was my son-in-law and your great-great-grandfather."/>
             
@@ -228,6 +230,8 @@ const relatives1939 = ["Charles Marten, 47, 'Clerk soap manufacture'", "Annie, h
              text5="So far I've been unable to find a census for 1891 with Agnes or her Son Richard on."      
                 
              /> 
+              </li>
+            <li className='cards__item'> 
              <LifeSummarySection  url={agnes1901} label='What happened next?' src={agnes1901} 
              
              text="On the 1st March 1892 Agnes was admitted into the Rainhill Asylum, Prescot."
@@ -237,7 +241,8 @@ const relatives1939 = ["Charles Marten, 47, 'Clerk soap manufacture'", "Annie, h
             text4="She is recorded as being a 43 year old housewife."
             text5="In the final column she is listed as being 'lunatic' - Lunatic was a general term used at the time to cover all people with mental health problems. " 
             text5="I've been unable to find an 1901 census with Agnes' husband Richard or daughter Amy on. Amy is not listed as living with her aunt Lillias anymore." />
-
+ </li>
+            <li className='cards__item'> 
             <LifeSummarySection  url={agnesDeath} label='What happened next?' src={agnesDeath}  // change to death cirt when it arrives 
             text="Agnes' husband Richard died in 1906, at the age of 53." 
             text2="Agnes died at Rainhill asylum in 1910. Her death certificate records 'chronic renal disease' as her cause of death." 

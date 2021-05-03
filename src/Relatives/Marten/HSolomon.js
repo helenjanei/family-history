@@ -75,10 +75,11 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
             
             label2='Children'
             src2={birthPic3}
-            />  <InfoSection url={taxRecord1814} label='Tax Record' src={taxRecord1814} text='In 1814 there is a tax record of my being a tenant at a property in Westminster, possibly on Newcastle Street, which no longer seems to exist. '/>
+            />  
             </li>
 
 <li className='cards__item'> 
+            <InfoSection url={taxRecord1814} label='Tax Record' src={taxRecord1814} text='In 1814 there is a tax record of my being a tenant at a property in Westminster, possibly on Newcastle Street, which no longer seems to exist. '/>
 <CensusSection 
            label='1841 Census'
             text="In 1841 I was aged 70 and I am living at number 5 Stanhope Street, Kings Cross, London (possibly! - and this is possibly the correct Stanhope street)" 
@@ -91,7 +92,8 @@ const relatives1841 = ['Myself, 70, Tailor', 'My daughter Susannah Marten(?), 25
           
            relatives={relatives1841}
            />
-
+ </li>
+ <li className='cards__item'> 
  <DeathSection  url={deathRecord} label='Death' src={deathRecord} text='I died on the 13th December 1845, at the age of 74.' text2="I am recorded as living at 7 Stanhope Street, Clare Market at the time of my death."
  text3="Clare Market is very close to St Clement Danes, however there is no Stanhope Street in the immediate vicinity on modern maps."/>
 </li>

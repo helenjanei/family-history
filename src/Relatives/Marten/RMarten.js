@@ -70,7 +70,9 @@ const relatives1881 = ["Emily Atkinson, 43, boarding house keeper", "Emily Eliza
   <InfoSection url={cityDirectory1839} label="Pigot's Directory of Sussex" src={cityDirectory1839} text="In 1839 and 1840 I appear in Pigot's Directory of Sussex." text2="I am listed under 'Boot and Shoe makers' with the address 4 Somerset Place, Brighton (no longer on modern maps)."/>
    <MarriageSection  url='https://maps.nls.uk/view/102347737' label='Marriage' src={marriage1873} //change when wedding cirt for SS comes in
              text="On the 5th November 1841, at the age of 25 I married Susannah Solomon, 30, in Brighton, Sussex."
-        /> 
+        /> </li>
+    
+          <li className='cards__item'> 
           <BirthSection text="Between 1843 and 1850 my wife and I had four children; Alfred Richard, Thomas John (your great great great grandfather), Walter Solomon and Mary Maria." 
             src={weddingMap}
             label='Children'

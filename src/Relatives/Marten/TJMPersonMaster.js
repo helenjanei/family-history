@@ -213,6 +213,9 @@ const relatives1901 = ["I am now 56 and my job is, 'agent for the Gresham assura
             <LifeSummarySection  url={walterCensus1871} label='What happened next?' src={walterCensus1871} text="My brother Walter Solomon married in Surrey, and then moved abroad."
             text2="One of his children's birth's is registered in Ontario, Canada, and another in Dresden, Germany." text3="His son Frank Walter was a surveyor and estate agent and was also granted the Freedom Of the City of London in 1919."
             text4="Walter seems to have died in 1890 in Yokohamma, Japan."/>
+            </li>
+
+          <li className='cards__item'> 
 <LifeSummarySection  label='What happened next?'
 url='https://en.wikipedia.org/wiki/Hatmaking'
 src={milliner}

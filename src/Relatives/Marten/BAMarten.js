@@ -132,6 +132,9 @@ text='My brother Fred became an engineer, and his name appears on crew lists in 
 text2="He died in 1928 at home in West Derby."
 
 />
+</li>
+<li className='cards__item'> 
+
 
            <LifeSummarySection 
 label='What happened next?'

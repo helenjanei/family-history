@@ -79,6 +79,9 @@ const relatives1841 = ['Myself, head, 62, Gardener', 'My wife Sarah 62', 'My dau
              relatives={relatives1841}       
             />
 
+</li>
+
+<li className='cards__item'> 
 
             
          
